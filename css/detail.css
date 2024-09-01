@@ -1,0 +1,195 @@
+@import url('https://fonts.cdnfonts.com/css/be-vietnam-pro');
+
+:root {
+    --disabled-color: rgb(165, 162, 159);
+    --nav-item-color: var(--gray-dark);
+    --theme-text-hovercolor: rgb(247, 126, 62);
+    --fancybox-zIndex:1056;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+  
+}
+
+/* Custom navbar BS5 in header */
+.custom-navbar .nav .nav-item .nav-link {
+    color: var(--nav-item-color);
+    font-weight: 500;
+}
+
+.custom-navbar .offcanvas-body .nav-item .nav-link {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.custom-navbar .offcanvas-body .nav-item .nav-link:hover {
+    color: var(--theme-text-hovercolor);
+}
+
+/*End Custom navbar BS5 in header */
+
+/* Custom Breadcrumb BS5 */
+.custom-breadcrumb .breadcrumb-item a {
+    color: var(--disabled-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.custom-breadcrumb .breadcrumb-item a:hover {
+    color: var(--nav-item-color);
+}
+
+.custom-breadcrumb .breadcrumb-item.active {
+    font-weight: 500;
+    color: var(--nav-item-color);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+/*End Custom Breadcrumb BS5*/
+
+/* Custom Navtab Scroll BS5*/
+.custom-navtab {
+    position: sticky;
+    top: 56px;
+    z-index: 999;
+}
+
+.custom-navtab::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-navtab .nav-item .nav-link {
+    font-size: 20px;
+    color: var(--disabled-color);
+    text-align: center;
+    padding: 16px 0;
+}
+
+.custom-navtab .nav-item {
+    min-width: 125px;
+}
+
+.custom-navtab .nav-item .nav-link.active {
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--nav-item-color);
+    border-bottom: solid 4px var(--theme-text-hovercolor);
+    border-radius: 0;
+
+}
+
+/*End Custom Navtab Scroll BS5*/
+
+/* Custom carousel BS5 */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    display: none;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+
+    display: flex;
+}
+.custom-carousel .carousel-inner .carousel-item img{
+    max-height: 500px;
+    object-fit: cover;
+}
+.custom-carousel .custom-carousel-indicators {
+    align-items: center;
+}
+
+.custom-carousel .custom-carousel-indicators button {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 1;
+}
+
+.custom-carousel .custom-carousel-indicators button.active {
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid var(--theme-text-hovercolor);
+    margin: 0 1px;
+}
+
+.custom-carousel-preview-image {
+    padding: 32px 0;
+}
+
+.custom-carousel-preview-image .custom-carousel-indicators-preview-image {
+    position: static;
+    touch-action: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    overflow-x: auto;
+    justify-content: start;
+    padding: 16px 0;
+    max-width: 624px;
+    margin: 32px auto;
+}
+
+.custom-carousel-preview-image .custom-carousel-indicators-preview-image::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-carousel-preview-image .custom-carousel-indicators-preview-image button {
+    min-width: 150px;
+    height: 82px;
+    background-position: center center;
+    background-size: cover;
+    border: none;
+    border-radius: 6px;
+    
+}
+.custom-carousel-preview-image .custom-carousel-indicators-preview-image button:first-child{
+    margin-left: 0;
+}
+.custom-carousel-preview-image .custom-carousel-indicators-preview-image button:last-child{
+    margin-right: 0;
+}
+.custom-carousel-preview-image .custom-carousel-indicators-preview-image button.active {
+    box-sizing:border-box;
+    border: 2px solid var(--theme-text-hovercolor);
+}
+
+/* End Custom carousel BS5 */
+/* Custom css Element */
+.page{
+    background-color: #fafafa;
+}
+.product-card{
+    cursor: pointer;
+}
+.text-price {
+    color: var(--theme-text-hovercolor);
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+
+.btn-booking {
+    background-color: var(--theme-text-hovercolor);
+    color: white;
+    border-radius: 60px;
+    padding: 8px 16px;
+    width: 130px;
+    font-size: 14px;
+}
+
+.btn-booking:hover {
+    background-color: var(--theme-text-hovercolor);
+}
+
+#PreviewProductModal.show .ctn-booking{
+    position: sticky;
+    bottom: -0;
+}
+
+/*End Custom css Element  */

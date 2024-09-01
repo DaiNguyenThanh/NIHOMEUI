@@ -1,0 +1,2340 @@
+.antsomi-reset:not([class^="iti"]), .antsomi-reset h1, .antsomi-reset h2, .antsomi-reset h3, .antsomi-reset h4, .antsomi-reset h5, .antsomi-reset h6, .antsomi-reset p, .antsomi-reset td, .antsomi-reset dl, .antsomi-reset tr, .antsomi-reset dt, .antsomi-reset ol, .antsomi-reset form, .antsomi-reset select, .antsomi-reset option, .antsomi-reset pre, .antsomi-reset div:not([class^="iti"]), .antsomi-reset table, .antsomi-reset th, .antsomi-reset tbody, .antsomi-reset tfoot, .antsomi-reset caption, .antsomi-reset thead, .antsomi-reset ul:not([class^="iti"]), .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset dd, .antsomi-reset fieldset, .antsomi-reset li:not([class^="iti"]), .antsomi-reset iframe, .antsomi-reset strong, .antsomi-reset legend, .antsomi-reset em, .antsomi-reset summary, .antsomi-reset cite, .antsomi-reset span:not([class^="iti"]), .antsomi-reset input:not([class^="iti"]), .antsomi-reset sup, .antsomi-reset label, .antsomi-reset dfn, .antsomi-reset object, .antsomi-reset big, .antsomi-reset q, .antsomi-reset samp, .antsomi-reset acronym, .antsomi-reset small, .antsomi-reset img, .antsomi-reset strike, .antsomi-reset code, .antsomi-reset sub, .antsomi-reset ins, .antsomi-reset textarea, .antsomi-reset button, .antsomi-reset var, .antsomi-reset a, .antsomi-reset abbr, .antsomi-reset applet, .antsomi-reset del, .antsomi-reset kbd, .antsomi-reset tt, .antsomi-reset b, .antsomi-reset i, .antsomi-reset hr,
+.antsomi-reset article, .antsomi-reset aside, .antsomi-reset figure, .antsomi-reset figcaption, .antsomi-reset footer, .antsomi-reset header, .antsomi-reset menu, .antsomi-reset nav, .antsomi-reset section, .antsomi-reset time, .antsomi-reset mark, .antsomi-reset audio, .antsomi-reset video, .antsomi-reset abbr, .antsomi-reset address, .antsomi-reset area, .antsomi-reset blockquote, .antsomi-reset canvas, .antsomi-reset caption, .antsomi-reset cite, .antsomi-reset code, .antsomi-reset colgroup, .antsomi-reset col, .antsomi-reset datalist, .antsomi-reset fieldset, .antsomi-reset main, .antsomi-reset map, .antsomi-reset meta, .antsomi-reset optgroup, .antsomi-reset output, .antsomi-reset progress {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: none;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0;
+  background-repeat: repeat;
+  border-color: black;
+  border-color: currentColor;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0;
+  border-style: none;
+  border-width: medium;
+  bottom: auto;
+  clear: none;
+  clip: auto;
+  color: inherit;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: inherit;
+  display: inline;
+  float: none;
+  font-family: inherit;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit;
+  font-style: inherit;
+  font-variant: normal;
+  font-weight: inherit;
+  left: auto;
+  letter-spacing: normal;
+  line-height: inherit;
+  list-style-type: inherit;
+  /* Could set list-style-type to none */
+  list-style-position: outside;
+  list-style-image: none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  outline: invert none medium;
+  overflow: visible;
+  padding: 0;
+  position: static;
+  quotes: "" "";
+  right: auto;
+  table-layout: auto;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-indent: 0;
+  text-transform: none;
+  top: auto;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: inherit;
+  white-space: normal;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  /* CSS3 */
+  /* Including all prefixes according to http://caniuse.com/ */
+  /* CSS Animations don't cascade, so don't require resetting */
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: auto;
+  -o-border-image: none;
+  border-image: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  column-count: auto;
+  column-gap: normal;
+  column-rule: medium none black;
+  /* doesn't exist yet but probably will */
+  column-span: 1;
+  column-width: auto;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+  overflow-x: visible;
+  overflow-y: visible;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+      hyphens: manual;
+  -ms-perspective: none;
+  -o-perspective: none;
+  perspective: none;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  text-shadow: none;
+  transition: all 0s ease 0s;
+  transform: none;
+  transform-origin: 50% 50%;
+  transform-style: flat;
+  word-break: normal; }
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine */
+/* HTML 4.01 */
+.antsomi-reset:not([class^="iti"]), .antsomi-reset h3, .antsomi-reset h5, .antsomi-reset p, .antsomi-reset h1, .antsomi-reset dl, .antsomi-reset dt, .antsomi-reset h6, .antsomi-reset ol, .antsomi-reset form, .antsomi-reset option, .antsomi-reset pre, .antsomi-reset div:not([class^="iti"]), .antsomi-reset h2, .antsomi-reset caption, .antsomi-reset h4, .antsomi-reset ul:not([class^="iti"]), .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset dd, .antsomi-reset fieldset, .antsomi-reset hr,
+.antsomi-reset article, .antsomi-reset dialog, .antsomi-reset figure, .antsomi-reset footer, .antsomi-reset header, .antsomi-reset hgroup, .antsomi-reset menu, .antsomi-reset nav, .antsomi-reset section, .antsomi-reset audio, .antsomi-reset video, .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset colgroup, .antsomi-reset main, .antsomi-reset progress, .antsomi-reset summary {
+  display: block; }
+
+.antsomi-reset h1, .antsomi-reset h2, .antsomi-reset h3, .antsomi-reset h4, .antsomi-reset h5, .antsomi-reset h6 {
+  font-weight: bold; }
+
+.antsomi-reset h1 {
+  font-size: 2em;
+  padding: .67em 0; }
+
+.antsomi-reset h2 {
+  font-size: 1.5em;
+  padding: .83em 0; }
+
+.antsomi-reset h3 {
+  font-size: 1.17em;
+  padding: .83em 0; }
+
+.antsomi-reset h4 {
+  font-size: 1em; }
+
+.antsomi-reset h5 {
+  font-size: .83em; }
+
+.antsomi-reset p {
+  margin: 1em 0; }
+
+.antsomi-reset table {
+  display: table; }
+
+.antsomi-reset thead {
+  display: table-header-group; }
+
+.antsomi-reset tbody {
+  display: table-row-group; }
+
+.antsomi-reset tfoot {
+  display: table-footer-group; }
+
+.antsomi-reset tr {
+  display: table-row; }
+
+.antsomi-reset th, .antsomi-reset td {
+  display: table-cell;
+  padding: 2px; }
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+.antsomi-reset ol, .antsomi-reset ul:not([class^="iti"]) {
+  margin: 1em 0; }
+
+.antsomi-reset ul li:not([class^="iti"]), .antsomi-reset ul ul li, .antsomi-reset ul ul ul li, .antsomi-reset ol li, .antsomi-reset ol ol li, .antsomi-reset ol ol ol li, .antsomi-reset ul ol ol li, .antsomi-reset ul ul ol li, .antsomi-reset ol ul ul li, .antsomi-reset ol ol ul li {
+  list-style-position: inside;
+  margin-top: .08em; }
+
+.antsomi-reset ol ol, .antsomi-reset ol ol ol, .antsomi-reset ul ul, .antsomi-reset ul ul ul, .antsomi-reset ol ul, .antsomi-reset ol ul ul, .antsomi-reset ol ol ul, .antsomi-reset ul ol, .antsomi-reset ul ol ol, .antsomi-reset ul ul ol {
+  padding-left: 40px;
+  margin: 0; }
+
+/* helper for general navigation */
+.antsomi-reset nav ul, .antsomi-reset nav ol {
+  list-style-type: none; }
+
+.antsomi-reset ul:not([class^="iti"]), .antsomi-reset menu {
+  list-style-type: disc; }
+
+.antsomi-reset ol {
+  list-style-type: decimal; }
+
+.antsomi-reset ol ul, .antsomi-reset ul ul, .antsomi-reset menu ul, .antsomi-reset ol menu, .antsomi-reset ul menu, .antsomi-reset menu menu {
+  list-style-type: circle; }
+
+.antsomi-reset ol ol ul, .antsomi-reset ol ul ul, .antsomi-reset ol menu ul, .antsomi-reset ol ol menu, .antsomi-reset ol ul menu, .antsomi-reset ol menu menu, .antsomi-reset ul ol ul, .antsomi-reset ul ul ul, .antsomi-reset ul menu ul, .antsomi-reset ul ol menu, .antsomi-reset ul ul menu, .antsomi-reset ul menu menu, .antsomi-reset menu ol ul, .antsomi-reset menu ul ul, .antsomi-reset menu menu ul, .antsomi-reset menu ol menu, .antsomi-reset menu ul menu, .antsomi-reset menu menu menu {
+  list-style-type: square; }
+
+.antsomi-reset li:not([class^="iti"]) {
+  display: list-item;
+  /* Fixes IE7 issue with positioning of nested bullets */
+  min-height: auto;
+  min-width: auto;
+  padding-left: 20px;
+  /* replace -webkit-padding-start: 40px; */ }
+
+.antsomi-reset strong {
+  font-weight: bold; }
+
+.antsomi-reset em {
+  font-style: italic; }
+
+.antsomi-reset kbd, .antsomi-reset samp, .antsomi-reset code, .antsomi-reset pre {
+  font-family: monospace; }
+
+.antsomi-reset a {
+  color: blue;
+  text-decoration: underline; }
+
+.antsomi-reset a:visited {
+  color: #529; }
+
+.antsomi-reset a, .antsomi-reset a *, .antsomi-reset input[type=submit], .antsomi-reset input[type=radio], .antsomi-reset input[type=checkbox], .antsomi-reset select {
+  cursor: pointer; }
+
+.antsomi-reset button, .antsomi-reset input[type=submit] {
+  text-align: center;
+  padding: 2px 6px 3px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: arial, helvetica, sans-serif;
+  font-size: small;
+  background: white;
+  -webkit-appearance: push-button;
+  color: buttontext;
+  border: 1px #a6a6a6 solid;
+  background: lightgrey;
+  /* Old browsers */
+  background: white;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #dddddd 100%, #d1d1d1 100%, #dddddd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );
+  /* IE6-9 */
+  -o-box-shadow: 1px 1px 0px #eee;
+  box-shadow: 1px 1px 0px #eee;
+  outline: initial; }
+
+.antsomi-reset button {
+  padding: 1px 6px 2px 6px;
+  margin-right: 5px; }
+
+.antsomi-reset input[type=hidden]:not([class^="iti"]) {
+  display: none; }
+
+/* restore form defaults */
+.antsomi-reset textarea {
+  -webkit-appearance: textarea;
+  background: white;
+  padding: 2px;
+  margin-left: 4px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 11px;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 13px;
+  resize: both; }
+
+.antsomi-reset select, .antsomi-reset textarea, .antsomi-reset input {
+  border: 1px solid #ccc; }
+
+.antsomi-reset select {
+  font-size: 11px;
+  font-family: helvetica, arial, sans-serif;
+  display: inline-block; }
+
+.antsomi-reset textarea:focus, .antsomi-reset input:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+  outline: initial; }
+
+.antsomi-reset input[type=text] {
+  background: white;
+  padding: 1px;
+  font-family: initial;
+  font-size: small; }
+
+.antsomi-reset input[type=checkbox], .antsomi-reset input[type=radio] {
+  border: 1px #2b2b2b solid;
+  border-radius: 4px; }
+
+.antsomi-reset input[type=checkbox], .antsomi-reset input[type=radio] {
+  outline: intial; }
+
+.antsomi-reset input[type=radio] {
+  margin: 2px 2px 3px 2px; }
+
+.antsomi-reset input[type=submit]:active, .antsomi-reset button:active {
+  background: #3b679e;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+  /* W3C */
+  border-color: #5259b0; }
+
+.antsomi-reset abbr[title], .antsomi-reset acronym[title], .antsomi-reset dfn[title] {
+  cursor: help;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted; }
+
+.antsomi-reset ins {
+  background-color: #ff9;
+  color: black; }
+
+.antsomi-reset del {
+  text-decoration: line-through; }
+
+.antsomi-reset blockquote, .antsomi-reset q {
+  quotes: none;
+  /* HTML5 */ }
+
+.antsomi-reset blockquote:before, .antsomi-reset blockquote:after, .antsomi-reset q:before, .antsomi-reset q:after, .antsomi-reset li:before, .antsomi-reset li:after {
+  content: ""; }
+
+.antsomi-reset input, .antsomi-reset select {
+  vertical-align: middle; }
+
+.antsomi-reset table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.antsomi-reset hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0; }
+
+.antsomi-reset *[dir=rtl] {
+  direction: rtl; }
+
+.antsomi-reset mark {
+  background-color: #ff9;
+  color: black;
+  font-style: italic;
+  font-weight: bold; }
+
+.antsomi-reset menu {
+  padding-left: 40px;
+  padding-top: 8px; }
+
+/* additional helpers */
+.antsomi-reset [hidden],
+.antsomi-reset template {
+  display: none; }
+
+.antsomi-reset abbr[title] {
+  border-bottom: 1px dotted; }
+
+.antsomi-reset sub, .antsomi-reset sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+.antsomi-reset sup {
+  top: -0.5em; }
+
+.antsomi-reset sub {
+  bottom: -0.25em; }
+
+.antsomi-reset img {
+  border: 0; }
+
+.antsomi-reset figure {
+  margin: 0; }
+
+.antsomi-reset textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+.antsomi-reset {
+  font-size: medium;
+  line-height: 1;
+  direction: ltr;
+  text-align: left;
+  /* for IE, Opera */
+  text-align: start;
+  /* recommended W3C Spec */
+  font-family: "Times New Roman", Times, serif;
+  /* Override this with whatever font-family is required */
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  list-style-type: disc; }
+
+.antsomi-reset pre {
+  white-space: pre; }
+
+/*
+* CleanSlate
+*   github.com/premasagar/cleanslate
+*
+*/
+/*
+  An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+  by Premasagar Rose
+      dharmafly.com
+
+  license
+      opensource.org/licenses/mit-license.php
+
+  **
+
+  v0.9.3
+
+*/
+/* == BLANKET RESET RULES == */
+/* HTML 4.01 */
+.antsomi-reset:not([class^="iti"]), .antsomi-reset h1, .antsomi-reset h2, .antsomi-reset h3, .antsomi-reset h4, .antsomi-reset h5, .antsomi-reset h6, .antsomi-reset p, .antsomi-reset td, .antsomi-reset dl, .antsomi-reset tr, .antsomi-reset dt, .antsomi-reset ol, .antsomi-reset form, .antsomi-reset select, .antsomi-reset option, .antsomi-reset pre, .antsomi-reset div:not([class^="iti"]), .antsomi-reset table, .antsomi-reset th, .antsomi-reset tbody, .antsomi-reset tfoot, .antsomi-reset caption, .antsomi-reset thead, .antsomi-reset ul:not([class^="iti"]), .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset dd, .antsomi-reset fieldset, .antsomi-reset li:not([class^="iti"]), .antsomi-reset iframe, .antsomi-reset strong, .antsomi-reset legend, .antsomi-reset em, .antsomi-reset summary, .antsomi-reset cite, .antsomi-reset span:not([class^="iti"]), .antsomi-reset input:not([class^="iti"]), .antsomi-reset sup, .antsomi-reset label, .antsomi-reset dfn, .antsomi-reset object, .antsomi-reset big, .antsomi-reset q, .antsomi-reset samp, .antsomi-reset acronym, .antsomi-reset small, .antsomi-reset img, .antsomi-reset strike, .antsomi-reset code, .antsomi-reset sub, .antsomi-reset ins, .antsomi-reset textarea, .antsomi-reset button, .antsomi-reset var, .antsomi-reset a, .antsomi-reset abbr, .antsomi-reset applet, .antsomi-reset del, .antsomi-reset kbd, .antsomi-reset tt, .antsomi-reset b, .antsomi-reset i, .antsomi-reset hr,
+.antsomi-reset article, .antsomi-reset aside, .antsomi-reset figure, .antsomi-reset figcaption, .antsomi-reset footer, .antsomi-reset header, .antsomi-reset menu, .antsomi-reset nav, .antsomi-reset section, .antsomi-reset time, .antsomi-reset mark, .antsomi-reset audio, .antsomi-reset video, .antsomi-reset abbr, .antsomi-reset address, .antsomi-reset area, .antsomi-reset blockquote, .antsomi-reset canvas, .antsomi-reset caption, .antsomi-reset cite, .antsomi-reset code, .antsomi-reset colgroup, .antsomi-reset col, .antsomi-reset datalist, .antsomi-reset fieldset, .antsomi-reset main, .antsomi-reset map, .antsomi-reset meta, .antsomi-reset optgroup, .antsomi-reset output, .antsomi-reset progress {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: none;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0;
+  background-repeat: repeat;
+  border-color: black;
+  border-color: currentColor;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0;
+  border-style: none;
+  border-width: medium;
+  bottom: auto;
+  clear: none;
+  clip: auto;
+  color: inherit;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: inherit;
+  display: inline;
+  float: none;
+  font-family: inherit;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit;
+  font-style: inherit;
+  font-variant: normal;
+  font-weight: inherit;
+  left: auto;
+  letter-spacing: normal;
+  line-height: inherit;
+  list-style-type: inherit;
+  /* Could set list-style-type to none */
+  list-style-position: outside;
+  list-style-image: none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  outline: invert none medium;
+  overflow: visible;
+  padding: 0;
+  position: static;
+  quotes: "" "";
+  right: auto;
+  table-layout: auto;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-indent: 0;
+  text-transform: none;
+  top: auto;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: inherit;
+  white-space: normal;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  /* CSS3 */
+  /* Including all prefixes according to http://caniuse.com/ */
+  /* CSS Animations don't cascade, so don't require resetting */
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: auto;
+  -o-border-image: none;
+  border-image: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  column-count: auto;
+  column-gap: normal;
+  column-rule: medium none black;
+  /* doesn't exist yet but probably will */
+  column-span: 1;
+  column-width: auto;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+  overflow-x: visible;
+  overflow-y: visible;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+      hyphens: manual;
+  -ms-perspective: none;
+  -o-perspective: none;
+  perspective: none;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  text-shadow: none;
+  transition: all 0s ease 0s;
+  transform: none;
+  transform-origin: 50% 50%;
+  transform-style: flat;
+  word-break: normal; }
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine */
+/* HTML 4.01 */
+.antsomi-reset:not([class^="iti"]), .antsomi-reset h3, .antsomi-reset h5, .antsomi-reset p, .antsomi-reset h1, .antsomi-reset dl, .antsomi-reset dt, .antsomi-reset h6, .antsomi-reset ol, .antsomi-reset form, .antsomi-reset option, .antsomi-reset pre, .antsomi-reset div:not([class^="iti"]), .antsomi-reset h2, .antsomi-reset caption, .antsomi-reset h4, .antsomi-reset ul:not([class^="iti"]), .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset dd, .antsomi-reset fieldset, .antsomi-reset hr,
+.antsomi-reset article, .antsomi-reset dialog, .antsomi-reset figure, .antsomi-reset footer, .antsomi-reset header, .antsomi-reset hgroup, .antsomi-reset menu, .antsomi-reset nav, .antsomi-reset section, .antsomi-reset audio, .antsomi-reset video, .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset colgroup, .antsomi-reset main, .antsomi-reset progress, .antsomi-reset summary {
+  display: block; }
+
+.antsomi-reset h1, .antsomi-reset h2, .antsomi-reset h3, .antsomi-reset h4, .antsomi-reset h5, .antsomi-reset h6 {
+  font-weight: bold; }
+
+.antsomi-reset h1 {
+  font-size: 2em;
+  padding: .67em 0; }
+
+.antsomi-reset h2 {
+  font-size: 1.5em;
+  padding: .83em 0; }
+
+.antsomi-reset h3 {
+  font-size: 1.17em;
+  padding: .83em 0; }
+
+.antsomi-reset h4 {
+  font-size: 1em; }
+
+.antsomi-reset h5 {
+  font-size: .83em; }
+
+.antsomi-reset p {
+  margin: 1em 0; }
+
+.antsomi-reset table {
+  display: table; }
+
+.antsomi-reset thead {
+  display: table-header-group; }
+
+.antsomi-reset tbody {
+  display: table-row-group; }
+
+.antsomi-reset tfoot {
+  display: table-footer-group; }
+
+.antsomi-reset tr {
+  display: table-row; }
+
+.antsomi-reset th, .antsomi-reset td {
+  display: table-cell;
+  padding: 2px; }
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+.antsomi-reset ol, .antsomi-reset ul:not([class^="iti"]) {
+  margin: 1em 0; }
+
+.antsomi-reset ul li:not([class^="iti"]), .antsomi-reset ul ul li, .antsomi-reset ul ul ul li, .antsomi-reset ol li, .antsomi-reset ol ol li, .antsomi-reset ol ol ol li, .antsomi-reset ul ol ol li, .antsomi-reset ul ul ol li, .antsomi-reset ol ul ul li, .antsomi-reset ol ol ul li {
+  list-style-position: inside;
+  margin-top: .08em; }
+
+.antsomi-reset ol ol, .antsomi-reset ol ol ol, .antsomi-reset ul ul, .antsomi-reset ul ul ul, .antsomi-reset ol ul, .antsomi-reset ol ul ul, .antsomi-reset ol ol ul, .antsomi-reset ul ol, .antsomi-reset ul ol ol, .antsomi-reset ul ul ol {
+  padding-left: 40px;
+  margin: 0; }
+
+/* helper for general navigation */
+.antsomi-reset nav ul, .antsomi-reset nav ol {
+  list-style-type: none; }
+
+.antsomi-reset ul:not([class^="iti"]), .antsomi-reset menu {
+  list-style-type: disc; }
+
+.antsomi-reset ol {
+  list-style-type: decimal; }
+
+.antsomi-reset ol ul, .antsomi-reset ul ul, .antsomi-reset menu ul, .antsomi-reset ol menu, .antsomi-reset ul menu, .antsomi-reset menu menu {
+  list-style-type: circle; }
+
+.antsomi-reset ol ol ul, .antsomi-reset ol ul ul, .antsomi-reset ol menu ul, .antsomi-reset ol ol menu, .antsomi-reset ol ul menu, .antsomi-reset ol menu menu, .antsomi-reset ul ol ul, .antsomi-reset ul ul ul, .antsomi-reset ul menu ul, .antsomi-reset ul ol menu, .antsomi-reset ul ul menu, .antsomi-reset ul menu menu, .antsomi-reset menu ol ul, .antsomi-reset menu ul ul, .antsomi-reset menu menu ul, .antsomi-reset menu ol menu, .antsomi-reset menu ul menu, .antsomi-reset menu menu menu {
+  list-style-type: square; }
+
+.antsomi-reset li:not([class^="iti"]) {
+  display: list-item;
+  /* Fixes IE7 issue with positioning of nested bullets */
+  min-height: auto;
+  min-width: auto;
+  padding-left: 20px;
+  /* replace -webkit-padding-start: 40px; */ }
+
+.antsomi-reset strong {
+  font-weight: bold; }
+
+.antsomi-reset em {
+  font-style: italic; }
+
+.antsomi-reset kbd, .antsomi-reset samp, .antsomi-reset code, .antsomi-reset pre {
+  font-family: monospace; }
+
+.antsomi-reset a {
+  color: blue;
+  text-decoration: underline; }
+
+.antsomi-reset a:visited {
+  color: #529; }
+
+.antsomi-reset a, .antsomi-reset a *, .antsomi-reset input[type=submit], .antsomi-reset input[type=radio], .antsomi-reset input[type=checkbox], .antsomi-reset select {
+  cursor: pointer; }
+
+.antsomi-reset button, .antsomi-reset input[type=submit] {
+  text-align: center;
+  padding: 2px 6px 3px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: arial, helvetica, sans-serif;
+  font-size: small;
+  background: white;
+  -webkit-appearance: push-button;
+  color: buttontext;
+  border: 1px #a6a6a6 solid;
+  background: lightgrey;
+  /* Old browsers */
+  background: white;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #dddddd 100%, #d1d1d1 100%, #dddddd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );
+  /* IE6-9 */
+  -o-box-shadow: 1px 1px 0px #eee;
+  box-shadow: 1px 1px 0px #eee;
+  outline: initial; }
+
+.antsomi-reset button {
+  padding: 1px 6px 2px 6px;
+  margin-right: 5px; }
+
+.antsomi-reset input[type=hidden]:not([class^="iti"]) {
+  display: none; }
+
+/* restore form defaults */
+.antsomi-reset textarea {
+  -webkit-appearance: textarea;
+  background: white;
+  padding: 2px;
+  margin-left: 4px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 11px;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 13px;
+  resize: both; }
+
+.antsomi-reset select, .antsomi-reset textarea, .antsomi-reset input {
+  border: 1px solid #ccc; }
+
+.antsomi-reset select {
+  font-size: 11px;
+  font-family: helvetica, arial, sans-serif;
+  display: inline-block; }
+
+.antsomi-reset textarea:focus, .antsomi-reset input:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+  outline: initial; }
+
+.antsomi-reset input[type=text] {
+  background: white;
+  padding: 1px;
+  font-family: initial;
+  font-size: small; }
+
+.antsomi-reset input[type=checkbox], .antsomi-reset input[type=radio] {
+  border: 1px #2b2b2b solid;
+  border-radius: 4px; }
+
+.antsomi-reset input[type=checkbox], .antsomi-reset input[type=radio] {
+  outline: intial; }
+
+.antsomi-reset input[type=radio] {
+  margin: 2px 2px 3px 2px; }
+
+.antsomi-reset input[type=submit]:active, .antsomi-reset button:active {
+  background: #3b679e;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+  /* W3C */
+  border-color: #5259b0; }
+
+.antsomi-reset abbr[title], .antsomi-reset acronym[title], .antsomi-reset dfn[title] {
+  cursor: help;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted; }
+
+.antsomi-reset ins {
+  background-color: #ff9;
+  color: black; }
+
+.antsomi-reset del {
+  text-decoration: line-through; }
+
+.antsomi-reset blockquote, .antsomi-reset q {
+  quotes: none;
+  /* HTML5 */ }
+
+.antsomi-reset blockquote:before, .antsomi-reset blockquote:after, .antsomi-reset q:before, .antsomi-reset q:after, .antsomi-reset li:before, .antsomi-reset li:after {
+  content: ""; }
+
+.antsomi-reset input, .antsomi-reset select {
+  vertical-align: middle; }
+
+.antsomi-reset table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.antsomi-reset hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0; }
+
+.antsomi-reset *[dir=rtl] {
+  direction: rtl; }
+
+.antsomi-reset mark {
+  background-color: #ff9;
+  color: black;
+  font-style: italic;
+  font-weight: bold; }
+
+.antsomi-reset menu {
+  padding-left: 40px;
+  padding-top: 8px; }
+
+/* additional helpers */
+.antsomi-reset [hidden],
+.antsomi-reset template {
+  display: none; }
+
+.antsomi-reset abbr[title] {
+  border-bottom: 1px dotted; }
+
+.antsomi-reset sub, .antsomi-reset sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+.antsomi-reset sup {
+  top: -0.5em; }
+
+.antsomi-reset sub {
+  bottom: -0.25em; }
+
+.antsomi-reset img {
+  border: 0; }
+
+.antsomi-reset figure {
+  margin: 0; }
+
+.antsomi-reset textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+.antsomi-reset {
+  font-size: medium;
+  line-height: 1;
+  direction: ltr;
+  text-align: left;
+  /* for IE, Opera */
+  text-align: start;
+  /* recommended W3C Spec */
+  font-family: "Times New Roman", Times, serif;
+  /* Override this with whatever font-family is required */
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  list-style-type: disc; }
+
+.antsomi-reset pre {
+  white-space: pre; }
+
+/* http://stackoverflow.com/a/6900392 */
+#antsomi-bell-container.antsomi-reset {
+  z-index: 2147483000;
+  position: fixed; }
+  #antsomi-bell-container.antsomi-reset.antsomi-bell-container-bottom-left {
+    bottom: 0;
+    left: 0; }
+  #antsomi-bell-container.antsomi-reset.antsomi-bell-container-bottom-right {
+    bottom: 0;
+    right: 0; }
+  #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: initial;
+    position: absolute;
+    z-index: 2147483000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    transform: scale(0.01) translateZ(0);
+    opacity: 0;
+    transition: transform 175ms ease-in-out, opacity 175ms ease-in-out; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left {
+      bottom: 20px;
+      left: 20px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-sm {
+        transform-origin: center center;
+        width: 32px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-sm .antsomi-bell-launcher-message {
+          left: 42px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog {
+          bottom: 39px;
+          left: 0;
+          transform-origin: left bottom; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog:before {
+            left: 5px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog:after {
+            left: 7px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-md {
+        transform-origin: center center;
+        width: 48px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-md .antsomi-bell-launcher-message {
+          left: 61px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog {
+          bottom: 58px;
+          left: 0;
+          transform-origin: left bottom; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog:before {
+            left: 12px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog:after {
+            left: 14px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-lg {
+        transform-origin: center center;
+        width: 64px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-lg .antsomi-bell-launcher-message {
+          left: 81px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog {
+          bottom: 78px;
+          left: 0;
+          transform-origin: left bottom; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog:before {
+            left: 18px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog:after {
+            left: 20px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left .antsomi-bell-launcher-badge {
+        left: 4px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left .antsomi-bell-launcher-message {
+        transform-origin: left center; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left .antsomi-bell-launcher-message:after {
+          right: 100%;
+          border-right-color: black; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-left .antsomi-bell-launcher-button {
+        left: 0px; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right {
+      bottom: 20px;
+      right: 20px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-sm {
+        transform-origin: center center;
+        width: 32px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-sm .antsomi-bell-launcher-message {
+          right: 42px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog {
+          bottom: 39px;
+          right: 0;
+          transform-origin: right bottom; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog:before {
+            right: 5px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog:after {
+            right: 7px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-md {
+        transform-origin: center center;
+        width: 48px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-md .antsomi-bell-launcher-message {
+          right: 61px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog {
+          bottom: 58px;
+          right: 0;
+          transform-origin: right bottom; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog:before {
+            right: 12px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog:after {
+            right: 14px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-lg {
+        transform-origin: center center;
+        width: 64px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-lg .antsomi-bell-launcher-message {
+          right: 81px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog {
+          bottom: 78px;
+          right: 0;
+          transform-origin: right bottom; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog:before {
+            right: 18px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog:after {
+            right: 20px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right .antsomi-bell-launcher-badge {
+        right: 4px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right .antsomi-bell-launcher-message {
+        transform-origin: right center; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right .antsomi-bell-launcher-message:after {
+          left: 100%;
+          border-left-color: black; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-bottom-right .antsomi-bell-launcher-button {
+        right: 0px; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-button {
+      position: absolute;
+      bottom: 0;
+      border-radius: 50%;
+      transition: transform 175ms ease-in-out, border 175ms ease-in-out, width 175ms ease-in-out, height 175ms ease-in-out;
+      cursor: pointer;
+      z-index: 2147483000; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-button svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-button.antsomi-bell-launcher-button-hover {
+        cursor: pointer; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-badge {
+      position: absolute;
+      bottom: 0;
+      border-radius: 50%;
+      text-align: center;
+      top: 0;
+      cursor: pointer;
+      -webkit-filter: drop-shadow(0 2px 4px rgba(34, 36, 38, 0));
+      filter: drop-shadow(0 2px 4px rgba(34, 36, 38, 0));
+      transition: transform 175ms ease-in-out, border 175ms ease-in-out, opacity 210ms ease-in-out, width 210ms ease-in-out, height 210ms ease-in-out, position 210ms ease-in-out, right 210ms ease-in-out, top 210ms ease-in-out, bottom 210ms ease-in-out, left 210ms ease-in-out;
+      z-index: 2147483400;
+      opacity: 0;
+      transform: scale(0.01);
+      pointer-events: none; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-badge.antsomi-bell-launcher-badge-hover {
+        cursor: pointer; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-badge.antsomi-bell-launcher-badge-opened {
+        opacity: 1;
+        transform: scale(1); }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-message {
+      position: absolute;
+      color: white;
+      background: black;
+      cursor: pointer;
+      border-radius: 5px;
+      transform: translateY(-50%) scaleX(0) translateZ(0);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 175ms ease-in-out, opacity 175ms ease-in-out;
+      top: 50%;
+      z-index: 2147481000; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-message:after {
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: transparent; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-message .antsomi-bell-launcher-message-body {
+        z-index: 2147482000;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-message.antsomi-bell-launcher-message-opened {
+        pointer-events: auto;
+        opacity: 1;
+        transform: translateY(-50%) scaleX(1) translateZ(0); }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog {
+      cursor: pointer;
+      position: absolute;
+      background-color: white;
+      border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      width: 200px;
+      transform: scale(0, 0) translateZ(0);
+      transition: transform 175ms ease-in-out, opacity 175ms ease-in-out;
+      z-index: 2147481000; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog ol {
+        counter-reset: foo;
+        display: table;
+        border-spacing: 0.3em 0.75em; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog ol > li {
+        counter-increment: foo;
+        display: table-row;
+        margin-bottom: 0.75em; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog ol > li::before {
+        content: counter(foo) ".";
+        display: table-cell;
+        /* aha! */
+        text-align: right; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog:after, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog:before {
+        top: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body {
+        z-index: 2147482000;
+        max-width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog.antsomi-bell-launcher-dialog-opened {
+        transform: scale(1, 1) translateZ(0);
+        opacity: 1; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog a {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: initial; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog a:visited, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog a:hover, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog a:hover:active, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog a:active, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog a:focus {
+          text-decoration: none;
+          color: initial; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog button {
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        padding: 0.625em 1em;
+        box-shadow: none;
+        border-radius: 4px;
+        font-weight: 400;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.65px;
+        cursor: pointer; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog button.action {
+          color: white;
+          background: #e54b4d;
+          width: 100%; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog button.action:hover {
+            background: #dd2022; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher .antsomi-bell-launcher-dialog button.action:active {
+            background: #b1191b; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm {
+      height: 32px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-button {
+        width: 32px;
+        height: 32px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-badge {
+        font-size: 8px;
+        width: 12px;
+        height: 12px;
+        line-height: 12px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-message {
+        padding: 9.6px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-message:after {
+          border-width: 6.6px;
+          margin-top: -6.6px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-message .antsomi-bell-launcher-message-body {
+          font-size: 14px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog {
+        padding: 0.3em 0.8em 0.6em 0.8em;
+        color: #333333; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog:after {
+          border-top-color: white;
+          border-width: 6.6px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog:before {
+          border-top-color: rgba(180, 180, 180, 0.1);
+          border-width: 8.6px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body {
+          font-size: 14px;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body h1 {
+            font-size: 15px;
+            line-height: 1.2em;
+            font-weight: 500;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #41090a; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .divider {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0.25em -0.93em; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .kickback {
+            text-align: center;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 9.8px;
+            letter-spacing: 0.5px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .instructions {
+            max-width: 95vw;
+            max-height: 70vh;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 14px; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .instructions img {
+              width: 100%; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification {
+            display: -ms-flexbox;
+            display: flex;
+            max-width: 330px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            background: rgba(250, 250, 250, 0.5);
+            overflow: auto;
+            margin: 0.5em 0; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon {
+              width: 50px;
+              height: 50px;
+              margin: 6px;
+              margin-right: 3px;
+              border-radius: 2px; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon.push-notification-icon-default {
+                background: #e3e4e5; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon img {
+                width: 50px;
+                height: 50px;
+                border-radius: 1px; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container {
+              margin: 6px;
+              margin-left: 3px;
+              -ms-flex: 1;
+                  flex: 1; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text {
+                height: 5px;
+                width: 100%;
+                background: #e3e4e5;
+                margin: 5px 0;
+                border-radius: 1px; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-short {
+                  width: 75%; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-medium {
+                  width: 87%; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:first-of-type {
+                  margin-top: 2px; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-sm .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:last-of-type {
+                  margin-bottom: 0; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md {
+      height: 48px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-button {
+        width: 48px;
+        height: 48px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-badge {
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-message {
+        padding: 14.4px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-message:after {
+          border-width: 9.9px;
+          margin-top: -9.9px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-message .antsomi-bell-launcher-message-body {
+          font-size: 14px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog {
+        padding: 0.3em 0.8em 0.6em 0.8em;
+        color: #333333; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog:after {
+          border-top-color: white;
+          border-width: 9.9px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog:before {
+          border-top-color: rgba(180, 180, 180, 0.1);
+          border-width: 11.9px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body {
+          font-size: 14px;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body h1 {
+            font-size: 15px;
+            line-height: 1.2em;
+            font-weight: 500;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #41090a; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .divider {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0.25em -0.93em; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .kickback {
+            text-align: center;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 9.8px;
+            letter-spacing: 0.5px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .instructions {
+            max-width: 95vw;
+            max-height: 70vh;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 14px; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .instructions img {
+              width: 100%; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification {
+            display: -ms-flexbox;
+            display: flex;
+            max-width: 330px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            background: rgba(250, 250, 250, 0.5);
+            overflow: auto;
+            margin: 0.5em 0; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon {
+              width: 50px;
+              height: 50px;
+              margin: 6px;
+              margin-right: 3px;
+              border-radius: 2px; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon.push-notification-icon-default {
+                background: #e3e4e5; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon img {
+                width: 50px;
+                height: 50px;
+                border-radius: 1px; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container {
+              margin: 6px;
+              margin-left: 3px;
+              -ms-flex: 1;
+                  flex: 1; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text {
+                height: 5px;
+                width: 100%;
+                background: #e3e4e5;
+                margin: 5px 0;
+                border-radius: 1px; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-short {
+                  width: 75%; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-medium {
+                  width: 87%; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:first-of-type {
+                  margin-top: 2px; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-md .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:last-of-type {
+                  margin-bottom: 0; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg {
+      height: 64px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-button {
+        width: 64px;
+        height: 64px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-badge {
+        font-size: 12px;
+        width: 24px;
+        height: 24px;
+        line-height: 24px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-message {
+        padding: 19.2px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-message:after {
+          border-width: 13.2px;
+          margin-top: -13.2px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-message .antsomi-bell-launcher-message-body {
+          font-size: 14px; }
+      #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog {
+        padding: 0.3em 0.8em 0.6em 0.8em;
+        color: #333333; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog:after {
+          border-top-color: white;
+          border-width: 13.2px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog:before {
+          border-top-color: rgba(180, 180, 180, 0.1);
+          border-width: 15.2px; }
+        #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body {
+          font-size: 14px;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body h1 {
+            font-size: 15px;
+            line-height: 1.2em;
+            font-weight: 500;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #41090a; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .divider {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin: 0.25em -0.93em; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .kickback {
+            text-align: center;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            font-size: 9.8px;
+            letter-spacing: 0.5px; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .instructions {
+            max-width: 95vw;
+            max-height: 70vh;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 14px; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .instructions img {
+              width: 100%; }
+          #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification {
+            display: -ms-flexbox;
+            display: flex;
+            max-width: 330px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            background: rgba(250, 250, 250, 0.5);
+            overflow: auto;
+            margin: 0.5em 0; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon {
+              width: 50px;
+              height: 50px;
+              margin: 6px;
+              margin-right: 3px;
+              border-radius: 2px; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon.push-notification-icon-default {
+                background: #e3e4e5; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-icon img {
+                width: 50px;
+                height: 50px;
+                border-radius: 1px; }
+            #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container {
+              margin: 6px;
+              margin-left: 3px;
+              -ms-flex: 1;
+                  flex: 1; }
+              #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text {
+                height: 5px;
+                width: 100%;
+                background: #e3e4e5;
+                margin: 5px 0;
+                border-radius: 1px; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-short {
+                  width: 75%; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-medium {
+                  width: 87%; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:first-of-type {
+                  margin-top: 2px; }
+                #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-lg .antsomi-bell-launcher-dialog .antsomi-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:last-of-type {
+                  margin-bottom: 0; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-button svg .background {
+      fill: #e54b4d; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-button svg .foreground {
+      fill: white; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-button svg .stroke {
+      fill: none;
+      stroke: white;
+      stroke-width: 3px;
+      stroke-miterlimit: 10; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-button.antsomi-bell-launcher-button-active svg .background, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-button.antsomi-bell-launcher-badge-active svg .background {
+      fill: #dd2022 !important; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-button .pulse-ring {
+      border: 7px solid rgba(255, 255, 255, 0.4); }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-default .antsomi-bell-launcher-badge {
+      border: 1px solid white;
+      background: black;
+      color: white; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-button svg .background {
+      fill: white; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-button svg .foreground {
+      fill: #e54b4d; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-button svg .stroke {
+      fill: none;
+      stroke: #e54b4d;
+      stroke-width: 3px;
+      stroke-miterlimit: 10; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-button.antsomi-bell-launcher-button-active svg .background, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-button.antsomi-bell-launcher-badge-active svg .background {
+      fill: #f2f2f2 !important; }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-button .pulse-ring {
+      border: 7px solid rgba(229, 75, 77, 0.4); }
+    #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher.antsomi-bell-launcher-theme-inverse .antsomi-bell-launcher-badge {
+      border: 1px solid white;
+      background: #e54b4d;
+      color: white; }
+  #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher-enabled, #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher-active {
+    transform: scale(1);
+    opacity: 1; }
+  #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher-disabled {
+    visibility: hidden; }
+  #antsomi-bell-container.antsomi-reset .antsomi-bell-launcher-inactive {
+    opacity: 0.5; }
+  #antsomi-bell-container.antsomi-reset .pulse-ring {
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    animation: notifyButtonPulse 0.35s ease-in-out;
+    animation-iteration-count: 1;
+    opacity: 0;
+    z-index: 1000;
+    pointer-events: none; }
+
+@media print {
+  #antsomi-bell-container {
+    display: none; } }
+
+@keyframes notifyButtonPulse {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.0;
+    border-width: 10px; }
+  50% {
+    opacity: 1.0;
+    border-width: 5px; }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.0;
+    border-width: 1px; } }
+
+/*
+* CleanSlate
+*   github.com/premasagar/cleanslate
+*
+*/
+/*
+  An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+  by Premasagar Rose
+      dharmafly.com
+
+  license
+      opensource.org/licenses/mit-license.php
+
+  **
+
+  v0.9.3
+
+*/
+/* == BLANKET RESET RULES == */
+/* HTML 4.01 */
+.antsomi-reset:not([class^="iti"]), .antsomi-reset h1, .antsomi-reset h2, .antsomi-reset h3, .antsomi-reset h4, .antsomi-reset h5, .antsomi-reset h6, .antsomi-reset p, .antsomi-reset td, .antsomi-reset dl, .antsomi-reset tr, .antsomi-reset dt, .antsomi-reset ol, .antsomi-reset form, .antsomi-reset select, .antsomi-reset option, .antsomi-reset pre, .antsomi-reset div:not([class^="iti"]), .antsomi-reset table, .antsomi-reset th, .antsomi-reset tbody, .antsomi-reset tfoot, .antsomi-reset caption, .antsomi-reset thead, .antsomi-reset ul:not([class^="iti"]), .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset dd, .antsomi-reset fieldset, .antsomi-reset li:not([class^="iti"]), .antsomi-reset iframe, .antsomi-reset strong, .antsomi-reset legend, .antsomi-reset em, .antsomi-reset summary, .antsomi-reset cite, .antsomi-reset span:not([class^="iti"]), .antsomi-reset input:not([class^="iti"]), .antsomi-reset sup, .antsomi-reset label, .antsomi-reset dfn, .antsomi-reset object, .antsomi-reset big, .antsomi-reset q, .antsomi-reset samp, .antsomi-reset acronym, .antsomi-reset small, .antsomi-reset img, .antsomi-reset strike, .antsomi-reset code, .antsomi-reset sub, .antsomi-reset ins, .antsomi-reset textarea, .antsomi-reset button, .antsomi-reset var, .antsomi-reset a, .antsomi-reset abbr, .antsomi-reset applet, .antsomi-reset del, .antsomi-reset kbd, .antsomi-reset tt, .antsomi-reset b, .antsomi-reset i, .antsomi-reset hr,
+.antsomi-reset article, .antsomi-reset aside, .antsomi-reset figure, .antsomi-reset figcaption, .antsomi-reset footer, .antsomi-reset header, .antsomi-reset menu, .antsomi-reset nav, .antsomi-reset section, .antsomi-reset time, .antsomi-reset mark, .antsomi-reset audio, .antsomi-reset video, .antsomi-reset abbr, .antsomi-reset address, .antsomi-reset area, .antsomi-reset blockquote, .antsomi-reset canvas, .antsomi-reset caption, .antsomi-reset cite, .antsomi-reset code, .antsomi-reset colgroup, .antsomi-reset col, .antsomi-reset datalist, .antsomi-reset fieldset, .antsomi-reset main, .antsomi-reset map, .antsomi-reset meta, .antsomi-reset optgroup, .antsomi-reset output, .antsomi-reset progress {
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: none;
+  /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+  background-position: 0 0;
+  background-repeat: repeat;
+  border-color: black;
+  border-color: currentColor;
+  /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+  border-radius: 0;
+  border-style: none;
+  border-width: medium;
+  bottom: auto;
+  clear: none;
+  clip: auto;
+  color: inherit;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: inherit;
+  display: inline;
+  float: none;
+  font-family: inherit;
+  /* As with other inherit values, this needs to be set on the root container element */
+  font-size: inherit;
+  font-style: inherit;
+  font-variant: normal;
+  font-weight: inherit;
+  left: auto;
+  letter-spacing: normal;
+  line-height: inherit;
+  list-style-type: inherit;
+  /* Could set list-style-type to none */
+  list-style-position: outside;
+  list-style-image: none;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  outline: invert none medium;
+  overflow: visible;
+  padding: 0;
+  position: static;
+  quotes: "" "";
+  right: auto;
+  table-layout: auto;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-indent: 0;
+  text-transform: none;
+  top: auto;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: inherit;
+  white-space: normal;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  /* CSS3 */
+  /* Including all prefixes according to http://caniuse.com/ */
+  /* CSS Animations don't cascade, so don't require resetting */
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-size: auto;
+  -o-border-image: none;
+  border-image: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  column-count: auto;
+  column-gap: normal;
+  column-rule: medium none black;
+  /* doesn't exist yet but probably will */
+  column-span: 1;
+  column-width: auto;
+  -webkit-font-feature-settings: normal;
+          font-feature-settings: normal;
+  overflow-x: visible;
+  overflow-y: visible;
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+      hyphens: manual;
+  -ms-perspective: none;
+  -o-perspective: none;
+  perspective: none;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  text-shadow: none;
+  transition: all 0s ease 0s;
+  transform: none;
+  transform-origin: 50% 50%;
+  transform-style: flat;
+  word-break: normal; }
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine */
+/* HTML 4.01 */
+.antsomi-reset:not([class^="iti"]), .antsomi-reset h3, .antsomi-reset h5, .antsomi-reset p, .antsomi-reset h1, .antsomi-reset dl, .antsomi-reset dt, .antsomi-reset h6, .antsomi-reset ol, .antsomi-reset form, .antsomi-reset option, .antsomi-reset pre, .antsomi-reset div:not([class^="iti"]), .antsomi-reset h2, .antsomi-reset caption, .antsomi-reset h4, .antsomi-reset ul:not([class^="iti"]), .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset dd, .antsomi-reset fieldset, .antsomi-reset hr,
+.antsomi-reset article, .antsomi-reset dialog, .antsomi-reset figure, .antsomi-reset footer, .antsomi-reset header, .antsomi-reset hgroup, .antsomi-reset menu, .antsomi-reset nav, .antsomi-reset section, .antsomi-reset audio, .antsomi-reset video, .antsomi-reset address, .antsomi-reset blockquote, .antsomi-reset colgroup, .antsomi-reset main, .antsomi-reset progress, .antsomi-reset summary {
+  display: block; }
+
+.antsomi-reset h1, .antsomi-reset h2, .antsomi-reset h3, .antsomi-reset h4, .antsomi-reset h5, .antsomi-reset h6 {
+  font-weight: bold; }
+
+.antsomi-reset h1 {
+  font-size: 2em;
+  padding: .67em 0; }
+
+.antsomi-reset h2 {
+  font-size: 1.5em;
+  padding: .83em 0; }
+
+.antsomi-reset h3 {
+  font-size: 1.17em;
+  padding: .83em 0; }
+
+.antsomi-reset h4 {
+  font-size: 1em; }
+
+.antsomi-reset h5 {
+  font-size: .83em; }
+
+.antsomi-reset p {
+  margin: 1em 0; }
+
+.antsomi-reset table {
+  display: table; }
+
+.antsomi-reset thead {
+  display: table-header-group; }
+
+.antsomi-reset tbody {
+  display: table-row-group; }
+
+.antsomi-reset tfoot {
+  display: table-footer-group; }
+
+.antsomi-reset tr {
+  display: table-row; }
+
+.antsomi-reset th, .antsomi-reset td {
+  display: table-cell;
+  padding: 2px; }
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+.antsomi-reset ol, .antsomi-reset ul:not([class^="iti"]) {
+  margin: 1em 0; }
+
+.antsomi-reset ul li:not([class^="iti"]), .antsomi-reset ul ul li, .antsomi-reset ul ul ul li, .antsomi-reset ol li, .antsomi-reset ol ol li, .antsomi-reset ol ol ol li, .antsomi-reset ul ol ol li, .antsomi-reset ul ul ol li, .antsomi-reset ol ul ul li, .antsomi-reset ol ol ul li {
+  list-style-position: inside;
+  margin-top: .08em; }
+
+.antsomi-reset ol ol, .antsomi-reset ol ol ol, .antsomi-reset ul ul, .antsomi-reset ul ul ul, .antsomi-reset ol ul, .antsomi-reset ol ul ul, .antsomi-reset ol ol ul, .antsomi-reset ul ol, .antsomi-reset ul ol ol, .antsomi-reset ul ul ol {
+  padding-left: 40px;
+  margin: 0; }
+
+/* helper for general navigation */
+.antsomi-reset nav ul, .antsomi-reset nav ol {
+  list-style-type: none; }
+
+.antsomi-reset ul:not([class^="iti"]), .antsomi-reset menu {
+  list-style-type: disc; }
+
+.antsomi-reset ol {
+  list-style-type: decimal; }
+
+.antsomi-reset ol ul, .antsomi-reset ul ul, .antsomi-reset menu ul, .antsomi-reset ol menu, .antsomi-reset ul menu, .antsomi-reset menu menu {
+  list-style-type: circle; }
+
+.antsomi-reset ol ol ul, .antsomi-reset ol ul ul, .antsomi-reset ol menu ul, .antsomi-reset ol ol menu, .antsomi-reset ol ul menu, .antsomi-reset ol menu menu, .antsomi-reset ul ol ul, .antsomi-reset ul ul ul, .antsomi-reset ul menu ul, .antsomi-reset ul ol menu, .antsomi-reset ul ul menu, .antsomi-reset ul menu menu, .antsomi-reset menu ol ul, .antsomi-reset menu ul ul, .antsomi-reset menu menu ul, .antsomi-reset menu ol menu, .antsomi-reset menu ul menu, .antsomi-reset menu menu menu {
+  list-style-type: square; }
+
+.antsomi-reset li:not([class^="iti"]) {
+  display: list-item;
+  /* Fixes IE7 issue with positioning of nested bullets */
+  min-height: auto;
+  min-width: auto;
+  padding-left: 20px;
+  /* replace -webkit-padding-start: 40px; */ }
+
+.antsomi-reset strong {
+  font-weight: bold; }
+
+.antsomi-reset em {
+  font-style: italic; }
+
+.antsomi-reset kbd, .antsomi-reset samp, .antsomi-reset code, .antsomi-reset pre {
+  font-family: monospace; }
+
+.antsomi-reset a {
+  color: blue;
+  text-decoration: underline; }
+
+.antsomi-reset a:visited {
+  color: #529; }
+
+.antsomi-reset a, .antsomi-reset a *, .antsomi-reset input[type=submit], .antsomi-reset input[type=radio], .antsomi-reset input[type=checkbox], .antsomi-reset select {
+  cursor: pointer; }
+
+.antsomi-reset button, .antsomi-reset input[type=submit] {
+  text-align: center;
+  padding: 2px 6px 3px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: arial, helvetica, sans-serif;
+  font-size: small;
+  background: white;
+  -webkit-appearance: push-button;
+  color: buttontext;
+  border: 1px #a6a6a6 solid;
+  background: lightgrey;
+  /* Old browsers */
+  background: white;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, #dddddd 100%, #d1d1d1 100%, #dddddd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 );
+  /* IE6-9 */
+  -o-box-shadow: 1px 1px 0px #eee;
+  box-shadow: 1px 1px 0px #eee;
+  outline: initial; }
+
+.antsomi-reset button {
+  padding: 1px 6px 2px 6px;
+  margin-right: 5px; }
+
+.antsomi-reset input[type=hidden]:not([class^="iti"]) {
+  display: none; }
+
+/* restore form defaults */
+.antsomi-reset textarea {
+  -webkit-appearance: textarea;
+  background: white;
+  padding: 2px;
+  margin-left: 4px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  font-size: 11px;
+  font-family: arial, helvetica, sans-serif;
+  line-height: 13px;
+  resize: both; }
+
+.antsomi-reset select, .antsomi-reset textarea, .antsomi-reset input {
+  border: 1px solid #ccc; }
+
+.antsomi-reset select {
+  font-size: 11px;
+  font-family: helvetica, arial, sans-serif;
+  display: inline-block; }
+
+.antsomi-reset textarea:focus, .antsomi-reset input:focus {
+  outline: auto 5px -webkit-focus-ring-color;
+  outline: initial; }
+
+.antsomi-reset input[type=text] {
+  background: white;
+  padding: 1px;
+  font-family: initial;
+  font-size: small; }
+
+.antsomi-reset input[type=checkbox], .antsomi-reset input[type=radio] {
+  border: 1px #2b2b2b solid;
+  border-radius: 4px; }
+
+.antsomi-reset input[type=checkbox], .antsomi-reset input[type=radio] {
+  outline: intial; }
+
+.antsomi-reset input[type=radio] {
+  margin: 2px 2px 3px 2px; }
+
+.antsomi-reset input[type=submit]:active, .antsomi-reset button:active {
+  background: #3b679e;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #3b679e 0%, #2b88d9 50%, #207cca 51%, #7db9e8 100%);
+  /* W3C */
+  border-color: #5259b0; }
+
+.antsomi-reset abbr[title], .antsomi-reset acronym[title], .antsomi-reset dfn[title] {
+  cursor: help;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted; }
+
+.antsomi-reset ins {
+  background-color: #ff9;
+  color: black; }
+
+.antsomi-reset del {
+  text-decoration: line-through; }
+
+.antsomi-reset blockquote, .antsomi-reset q {
+  quotes: none;
+  /* HTML5 */ }
+
+.antsomi-reset blockquote:before, .antsomi-reset blockquote:after, .antsomi-reset q:before, .antsomi-reset q:after, .antsomi-reset li:before, .antsomi-reset li:after {
+  content: ""; }
+
+.antsomi-reset input, .antsomi-reset select {
+  vertical-align: middle; }
+
+.antsomi-reset table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.antsomi-reset hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0; }
+
+.antsomi-reset *[dir=rtl] {
+  direction: rtl; }
+
+.antsomi-reset mark {
+  background-color: #ff9;
+  color: black;
+  font-style: italic;
+  font-weight: bold; }
+
+.antsomi-reset menu {
+  padding-left: 40px;
+  padding-top: 8px; }
+
+/* additional helpers */
+.antsomi-reset [hidden],
+.antsomi-reset template {
+  display: none; }
+
+.antsomi-reset abbr[title] {
+  border-bottom: 1px dotted; }
+
+.antsomi-reset sub, .antsomi-reset sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+.antsomi-reset sup {
+  top: -0.5em; }
+
+.antsomi-reset sub {
+  bottom: -0.25em; }
+
+.antsomi-reset img {
+  border: 0; }
+
+.antsomi-reset figure {
+  margin: 0; }
+
+.antsomi-reset textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+.antsomi-reset {
+  font-size: medium;
+  line-height: 1;
+  direction: ltr;
+  text-align: left;
+  /* for IE, Opera */
+  text-align: start;
+  /* recommended W3C Spec */
+  font-family: "Times New Roman", Times, serif;
+  /* Override this with whatever font-family is required */
+  color: black;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  list-style-type: disc; }
+
+.antsomi-reset pre {
+  white-space: pre; }
+
+.antsomi-customlink-container {
+  min-height: 6em; }
+  .antsomi-customlink-container.hide {
+    display: none; }
+
+.antsomi-customlink-subscribe {
+  display: inline-block;
+  transition: all 0.1s;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .antsomi-customlink-subscribe:hover {
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9); }
+  .antsomi-customlink-subscribe.state-subscribed {
+    opacity: 0.8; }
+  .antsomi-customlink-subscribe.antsomi-reset {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: inline-block;
+    transition: all 0.1s; }
+  .antsomi-customlink-subscribe.button {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    font-weight: 600px;
+    border-radius: 4px;
+    cursor: pointer; }
+    .antsomi-customlink-subscribe.button:hover, .antsomi-customlink-subscribe.button:focus, .antsomi-customlink-subscribe.button:active {
+      text-decoration: none; }
+    .antsomi-customlink-subscribe.button.state-subscribed {
+      text-transform: none;
+      font-weight: 400; }
+  .antsomi-customlink-subscribe.link {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600; }
+    .antsomi-customlink-subscribe.link.state-subscribed {
+      text-transform: none;
+      font-weight: 400; }
+    .antsomi-customlink-subscribe.link:hover, .antsomi-customlink-subscribe.link:focus, .antsomi-customlink-subscribe.link:active {
+      text-decoration: underline; }
+  .antsomi-customlink-subscribe.button.small {
+    font-size: 13px;
+    padding: 4px 12px; }
+  .antsomi-customlink-subscribe.link.small {
+    font-size: 13px; }
+  .antsomi-customlink-subscribe.button.medium {
+    font-size: 15px;
+    padding: 8px 16px; }
+  .antsomi-customlink-subscribe.link.medium {
+    font-size: 15px; }
+  .antsomi-customlink-subscribe.button.large {
+    font-size: 18px;
+    padding: 12px 20px; }
+  .antsomi-customlink-subscribe.link.large {
+    font-size: 18px; }
+
+.antsomi-customlink-explanation {
+  color: rgba(0, 0, 0, 0.64);
+  transition: all 0.1s;
+  font-family: "Proxima-Nova", "Proxima Nova", "Open Sans", Arial, Helvetica, sans-serif;
+  margin-bottom: 12px; }
+  .antsomi-customlink-explanation.antsomi-reset {
+    color: rgba(0, 0, 0, 0.64);
+    transition: all 0.1s;
+    font-family: "Proxima-Nova", "Proxima Nova", "Open Sans", Arial, Helvetica, sans-serif;
+    margin-bottom: 12px; }
+  .antsomi-customlink-explanation.small {
+    font-size: 13px; }
+  .antsomi-customlink-explanation.medium {
+    font-size: 15px; }
+  .antsomi-customlink-explanation.large {
+    font-size: 15px; }
+
+/* http://stackoverflow.com/a/6900392 */
+.iti--container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .iti--container {
+      z-index: 2258594001 !important; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .iti--container {
+      z-index: 2258594001 !important; } }
+  .iti--container .iti__country.iti__highlight {
+    background-color: #e5f2fc; }
+
+#antsomi-slidedown-container, #antsomi-popover-container {
+  font-size: 16px;
+  position: fixed;
+  z-index: 2258594000;
+  left: 0;
+  right: 0;
+  -webkit-font-smoothing: initial; }
+  #antsomi-slidedown-container .antsomi-toast-text, #antsomi-popover-container .antsomi-toast-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center; }
+  #antsomi-slidedown-container #slidedown-body, #antsomi-popover-container #slidedown-body {
+    /* International Telephone Input Styles */ }
+    #antsomi-slidedown-container #slidedown-body .channel-capture-container, #antsomi-popover-container #slidedown-body .channel-capture-container {
+      background-color: white;
+      position: relative;
+      white-space: nowrap;
+      box-sizing: border-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      margin-top: -10px; }
+      @media (min-width: 320px) and (max-width: 767px) {
+        #antsomi-slidedown-container #slidedown-body .channel-capture-container, #antsomi-popover-container #slidedown-body .channel-capture-container {
+          margin-top: 10px;
+          display: block; } }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #antsomi-slidedown-container #slidedown-body .channel-capture-container, #antsomi-popover-container #slidedown-body .channel-capture-container {
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+      #antsomi-slidedown-container #slidedown-body .channel-capture-container label, #antsomi-popover-container #slidedown-body .channel-capture-container label {
+        display: inline-block;
+        margin-bottom: 4px; }
+      #antsomi-slidedown-container #slidedown-body .channel-capture-container .antsomi-error-input, #antsomi-popover-container #slidedown-body .channel-capture-container .antsomi-error-input {
+        label-color: #646D74; }
+        #antsomi-slidedown-container #slidedown-body .channel-capture-container .antsomi-error-input input, #antsomi-popover-container #slidedown-body .channel-capture-container .antsomi-error-input input {
+          background: #FCECEC;
+          border: 1px solid #E54B4D; }
+          #antsomi-slidedown-container #slidedown-body .channel-capture-container .antsomi-error-input input:focus, #antsomi-popover-container #slidedown-body .channel-capture-container .antsomi-error-input input:focus {
+            background: #FCECEC;
+            border: 1px solid #E54B4D; }
+      #antsomi-slidedown-container #slidedown-body .channel-capture-container input, #antsomi-popover-container #slidedown-body .channel-capture-container input {
+        border: 1px solid #CED3D8;
+        background: #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 36px;
+        width: 356px;
+        font-size: 16px;
+        padding-left: 8px; }
+        @media (min-width: 320px) and (max-width: 767px) {
+          #antsomi-slidedown-container #slidedown-body .channel-capture-container input, #antsomi-popover-container #slidedown-body .channel-capture-container input {
+            width: 100%; } }
+        #antsomi-slidedown-container #slidedown-body .channel-capture-container input:focus, #antsomi-popover-container #slidedown-body .channel-capture-container input:focus {
+          background: #E5F2FC;
+          border: 1px solid #1F8FEB; }
+    #antsomi-slidedown-container #slidedown-body .input-with-validation-element, #antsomi-popover-container #slidedown-body .input-with-validation-element {
+      background-color: white;
+      position: relative;
+      white-space: nowrap;
+      box-sizing: border-box;
+      margin-bottom: 24px; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element p, #antsomi-popover-container #slidedown-body .input-with-validation-element p {
+        margin-top: 6px;
+        margin-bottom: 6px; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element label, #antsomi-popover-container #slidedown-body .input-with-validation-element label {
+        color: #051B2C; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        #antsomi-slidedown-container #slidedown-body .input-with-validation-element, #antsomi-popover-container #slidedown-body .input-with-validation-element {
+          margin-left: 16px; } }
+      @media (min-width: 320px) and (max-width: 767px) {
+        #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti {
+          display: block; } }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti__dial-code, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti__dial-code {
+        color: grey; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti__selected-flag, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti__selected-flag {
+        background-color: transparent;
+        border-radius: 4px; }
+        #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti__selected-flag:focus, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti__selected-flag:focus {
+          outline: #0078d1; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti__country-list, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti__country-list {
+        width: 356px;
+        box-shadow: 0px 1px 4px rgba(5, 27, 44, 0.2);
+        border-radius: 4px;
+        background: #FFFFFF;
+        border: none;
+        line-height: 28px; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti__country-name, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti__country-name {
+        white-space: pre-wrap; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element .iti__country.iti__highlight, #antsomi-popover-container #slidedown-body .input-with-validation-element .iti__country.iti__highlight {
+        background-color: #e5f2fc; }
+      #antsomi-slidedown-container #slidedown-body .input-with-validation-element .antsomi-validation-element, #antsomi-popover-container #slidedown-body .input-with-validation-element .antsomi-validation-element {
+        color: #e54b4d;
+        display: -ms-flexbox;
+        display: flex; }
+        #antsomi-slidedown-container #slidedown-body .input-with-validation-element .antsomi-validation-element img, #antsomi-popover-container #slidedown-body .input-with-validation-element .antsomi-validation-element img {
+          padding-right: 8px; }
+  #antsomi-slidedown-container.slide-down, #antsomi-popover-container.slide-down {
+    top: 0; }
+    #antsomi-slidedown-container.slide-down.close-slidedown #antsomi-slidedown-dialog, #antsomi-slidedown-container.slide-down.close-slidedown #antsomi-popover-dialog, #antsomi-popover-container.slide-down.close-slidedown #antsomi-slidedown-dialog, #antsomi-popover-container.slide-down.close-slidedown #antsomi-popover-dialog {
+      -webkit-animation-name: slideDownExit;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-out;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: slideDownExit;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 400ms;
+      animation-fill-mode: forwards; }
+    #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog, #antsomi-popover-container.slide-down #antsomi-popover-dialog {
+      width: 500px;
+      -webkit-animation-name: slideDownEnter;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-out;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: slideDownEnter;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 400ms;
+      animation-fill-mode: forwards; }
+      #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog {
+        padding: 1.714em;
+        width: 612px;
+        margin-bottom: 18px; }
+        #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog #blocked-slidedown, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog #blocked-slidedown, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog #blocked-slidedown, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog #blocked-slidedown {
+          display: block; }
+        #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog #normal-slidedown, #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog #normal-popover, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog #normal-slidedown, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog #normal-popover, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog #normal-slidedown, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog #normal-popover, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog #normal-slidedown, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog #normal-popover {
+          display: none; }
+        #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-body-message, #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-body-message, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-body-message, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-body-message, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-body-message, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-body-message, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-body-message, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-body-message {
+          padding: 0 0.2em 0 0.2em;
+          text-align: center;
+          width: 100%; }
+          #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-body-message img, #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-body-message img, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-body-message img, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-body-message img, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-body-message img, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-body-message img, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-body-message img, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-body-message img {
+            width: 100%; }
+          #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-body-message .unblock-image, #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-body-message .unblock-image, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-body-message .unblock-image, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-body-message .unblock-image, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-body-message .unblock-image, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-body-message .unblock-image, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-body-message .unblock-image, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-body-message .unblock-image {
+            margin: 2em 0 0.5em 0; }
+        #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-button.secondary, #antsomi-slidedown-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-button.secondary, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-button.secondary, #antsomi-slidedown-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-button.secondary, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .slidedown-button.secondary, #antsomi-popover-container.slide-down #antsomi-slidedown-dialog.blocked-dialog .popover-button.secondary, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .slidedown-button.secondary, #antsomi-popover-container.slide-down #antsomi-popover-dialog.blocked-dialog .popover-button.secondary {
+          padding: 0.714em 2em; }
+  #antsomi-slidedown-container #blocked-slidedown, #antsomi-slidedown-container #blocked-popover, #antsomi-popover-container #blocked-slidedown, #antsomi-popover-container #blocked-popover {
+    display: none; }
+  #antsomi-slidedown-container.slide-up, #antsomi-popover-container.slide-up {
+    bottom: 0; }
+    #antsomi-slidedown-container.slide-up.close-slidedown #antsomi-slidedown-dialog, #antsomi-slidedown-container.slide-up.close-slidedown #antsomi-popover-dialog, #antsomi-slidedown-container.slide-up.close-popover #antsomi-slidedown-dialog, #antsomi-slidedown-container.slide-up.close-popover #antsomi-popover-dialog, #antsomi-popover-container.slide-up.close-slidedown #antsomi-slidedown-dialog, #antsomi-popover-container.slide-up.close-slidedown #antsomi-popover-dialog, #antsomi-popover-container.slide-up.close-popover #antsomi-slidedown-dialog, #antsomi-popover-container.slide-up.close-popover #antsomi-popover-dialog {
+      -webkit-animation-name: slideUpExit;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-out;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: slideUpExit;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 400ms;
+      animation-fill-mode: forwards; }
+    #antsomi-slidedown-container.slide-up #antsomi-slidedown-dialog, #antsomi-slidedown-container.slide-up #antsomi-popover-dialog, #antsomi-popover-container.slide-up #antsomi-slidedown-dialog, #antsomi-popover-container.slide-up #antsomi-popover-dialog {
+      border-bottom-left-radius: unset;
+      border-bottom-right-radius: unset;
+      width: 100%;
+      -webkit-animation-name: slideUpEnter;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-timing-function: ease-out;
+      -webkit-animation-duration: 400ms;
+      -webkit-animation-fill-mode: backwards;
+      animation-name: slideUpEnter;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
+      animation-duration: 400ms;
+      animation-fill-mode: backwards; }
+  #antsomi-slidedown-container .tagging-container, #antsomi-popover-container .tagging-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2em 0; }
+  #antsomi-slidedown-container .tagging-container-col, #antsomi-popover-container .tagging-container-col {
+    -ms-flex: 1;
+        flex: 1;
+    padding-left: 1em; }
+  #antsomi-slidedown-container .antsomi-category-label, #antsomi-popover-container .antsomi-category-label {
+    display: block;
+    position: relative;
+    padding-left: 2.5em;
+    margin-bottom: 1.5em;
+    color: #051B2C;
+    font-size: 1em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 1.5em;
+    width: 80%;
+    line-height: 1.5em;
+    float: left;
+    /* On mouse-over, add a grey background color */ }
+    #antsomi-slidedown-container .antsomi-category-label .antsomi-category-label-input, #antsomi-popover-container .antsomi-category-label .antsomi-category-label-input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      /* When the checkbox is checked, add a blue background */ }
+      #antsomi-slidedown-container .antsomi-category-label .antsomi-category-label-input:checked ~ .antsomi-checkmark, #antsomi-popover-container .antsomi-category-label .antsomi-category-label-input:checked ~ .antsomi-checkmark {
+        transition: ease 75ms;
+        background-color: #0078D1; }
+      #antsomi-slidedown-container .antsomi-category-label .antsomi-category-label-input:checked ~ .antsomi-checkmark:after, #antsomi-popover-container .antsomi-category-label .antsomi-category-label-input:checked ~ .antsomi-checkmark:after {
+        display: block;
+        box-sizing: content-box; }
+    #antsomi-slidedown-container .antsomi-category-label:hover input ~ .antsomi-checkmark, #antsomi-popover-container .antsomi-category-label:hover input ~ .antsomi-checkmark {
+      background-color: #dde1e4; }
+    #antsomi-slidedown-container .antsomi-category-label .antsomi-category-label-text, #antsomi-popover-container .antsomi-category-label .antsomi-category-label-text {
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block; }
+    #antsomi-slidedown-container .antsomi-category-label .antsomi-checkmark, #antsomi-popover-container .antsomi-category-label .antsomi-checkmark {
+      box-sizing: content-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: .25em;
+      cursor: pointer;
+      background-color: #ebedef;
+      /* Create the checkmark/indicator (hidden when not checked) */ }
+      #antsomi-slidedown-container .antsomi-category-label .antsomi-checkmark:after, #antsomi-popover-container .antsomi-category-label .antsomi-checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 0.5em;
+        top: 0.25em;
+        width: 0.33em;
+        height: 0.66em;
+        border: solid white;
+        box-sizing: content-box;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg); }
+  #antsomi-slidedown-container .antsomi-loading-container, #antsomi-popover-container .antsomi-loading-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+    #antsomi-slidedown-container .antsomi-loading-container .antsomi-loading-message, #antsomi-popover-container .antsomi-loading-container .antsomi-loading-message {
+      -ms-flex: 1;
+          flex: 1;
+      color: #CED3D8;
+      margin-top: .8125em; }
+  #antsomi-slidedown-container .antsomi-button-indicator-holder, #antsomi-popover-container .antsomi-button-indicator-holder {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0.5em; }
+  #antsomi-slidedown-container #antsomi-slidedown-dialog, #antsomi-slidedown-container #antsomi-popover-dialog, #antsomi-popover-container #antsomi-slidedown-dialog, #antsomi-popover-container #antsomi-popover-dialog {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px rgba(5, 27, 44, 0.06), 0 2px 32px rgba(5, 27, 44, 0.16) !important;
+    background: white !important;
+    color: #051b2c;
+    padding: 1.5em 1.5em;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Seoe UI Symbol"; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-body, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-body, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-body, #antsomi-slidedown-container #antsomi-popover-dialog .popover-body, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-body, #antsomi-popover-container #antsomi-slidedown-dialog .popover-body, #antsomi-popover-container #antsomi-popover-dialog .slidedown-body, #antsomi-popover-container #antsomi-popover-dialog .popover-body {
+      box-sizing: border-box;
+      margin: 0; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-body-icon, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-body-icon, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-body-icon, #antsomi-slidedown-container #antsomi-popover-dialog .popover-body-icon, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-body-icon, #antsomi-popover-container #antsomi-slidedown-dialog .popover-body-icon, #antsomi-popover-container #antsomi-popover-dialog .slidedown-body-icon, #antsomi-popover-container #antsomi-popover-dialog .popover-body-icon {
+      box-sizing: border-box;
+      float: left;
+      width: 80px;
+      height: 80px;
+      position: relative; }
+      #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-body-icon img, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-body-icon img, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-body-icon img, #antsomi-slidedown-container #antsomi-popover-dialog .popover-body-icon img, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-body-icon img, #antsomi-popover-container #antsomi-slidedown-dialog .popover-body-icon img, #antsomi-popover-container #antsomi-popover-dialog .slidedown-body-icon img, #antsomi-popover-container #antsomi-popover-dialog .popover-body-icon img {
+        width: 100%;
+        height: 100%; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-body-icon img.default-icon, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-body-icon img.default-icon, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-body-icon img.default-icon, #antsomi-slidedown-container #antsomi-popover-dialog .popover-body-icon img.default-icon, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-body-icon img.default-icon, #antsomi-popover-container #antsomi-slidedown-dialog .popover-body-icon img.default-icon, #antsomi-popover-container #antsomi-popover-dialog .slidedown-body-icon img.default-icon, #antsomi-popover-container #antsomi-popover-dialog .popover-body-icon img.default-icon {
+          width: 45px;
+          top: 3px;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          height: 45px; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-body-message, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-body-message, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-body-message, #antsomi-slidedown-container #antsomi-popover-dialog .popover-body-message, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-body-message, #antsomi-popover-container #antsomi-slidedown-dialog .popover-body-message, #antsomi-popover-container #antsomi-popover-dialog .slidedown-body-message, #antsomi-popover-container #antsomi-popover-dialog .popover-body-message {
+      box-sizing: border-box;
+      padding: 0 0 0 1em;
+      font-weight: 400;
+      float: left;
+      width: calc(100% - 80px);
+      line-height: 1.45em;
+      -o-user-select: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      cursor: default;
+      color: #051B2C !important; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog button, #antsomi-slidedown-container #antsomi-popover-dialog button, #antsomi-popover-container #antsomi-slidedown-dialog button, #antsomi-popover-container #antsomi-popover-dialog button {
+      box-sizing: border-box;
+      display: inline-block;
+      padding: .375rem 1rem;
+      font-size: 0.9625em;
+      font-weight: 400;
+      line-height: 1.5;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      font-family: inherit;
+      letter-spacing: 0.05em;
+      transition: background-color 75ms ease;
+      margin: 0; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button, #antsomi-popover-container #antsomi-popover-dialog .popover-button {
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border-radius: .25em;
+      font-weight: 400;
+      box-shadow: unset;
+      display: -ms-flexbox;
+      display: flex; }
+      #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary {
+        background: #0078D1;
+        color: white !important;
+        transition: linear 75ms; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary:hover, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary:hover, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary:hover, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary:hover, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary:hover, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary:hover, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary:hover, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary:hover {
+          background: #0062ab; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary:active, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary:active, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary:active, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary:active, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary:active, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary:active, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary:active, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary:active {
+          background: #004c85; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary.disabled, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary.disabled, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary.disabled, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary.disabled, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary.disabled, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary.disabled, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary.disabled, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary.disabled {
+          background-color: #CED3D8;
+          cursor: default; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary.antsomi-saving-state-button, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary.antsomi-saving-state-button, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary.antsomi-saving-state-button, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary.antsomi-saving-state-button, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary.antsomi-saving-state-button, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary.antsomi-saving-state-button, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary.antsomi-saving-state-button, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary.antsomi-saving-state-button {
+          padding: 0.75em 1em;
+          background: #CED3D8;
+          transition: linear 75ms; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary.antsomi-error-state-button, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary.antsomi-error-state-button, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary.antsomi-error-state-button, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary.antsomi-error-state-button, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary.antsomi-error-state-button, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary.antsomi-error-state-button, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary.antsomi-error-state-button, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary.antsomi-error-state-button {
+          padding: 0.75em 1em;
+          background: #0078d1;
+          transition: linear 75ms;
+          -ms-flex-align: center;
+              align-items: center; }
+          #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.primary.antsomi-error-state-button span, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.primary.antsomi-error-state-button span, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.primary.antsomi-error-state-button span, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.primary.antsomi-error-state-button span, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.primary.antsomi-error-state-button span, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.primary.antsomi-error-state-button span, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.primary.antsomi-error-state-button span, #antsomi-popover-container #antsomi-popover-dialog .popover-button.primary.antsomi-error-state-button span {
+            cursor: pointer; }
+      #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.antsomi-button-indicator-holder, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.antsomi-button-indicator-holder, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.antsomi-button-indicator-holder, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.antsomi-button-indicator-holder, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.antsomi-button-indicator-holder, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.antsomi-button-indicator-holder, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.antsomi-button-indicator-holder, #antsomi-popover-container #antsomi-popover-dialog .popover-button.antsomi-button-indicator-holder {
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 0.5em;
+        cursor: pointer; }
+      #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.secondary, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.secondary, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.secondary, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.secondary, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.secondary, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.secondary, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.secondary, #antsomi-popover-container #antsomi-popover-dialog .popover-button.secondary {
+        box-shadow: none;
+        background: white !important;
+        /*
+          We sparingly use an !important tag here because it's important for the user to be able to click "No Thanks".
+          Some sites set their own !important tag for text and we don't want that to be able to override ours.
+         */
+        color: #0078D1 !important; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.secondary:hover, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.secondary:hover, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.secondary:hover, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.secondary:hover, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.secondary:hover, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.secondary:hover, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.secondary:hover, #antsomi-popover-container #antsomi-popover-dialog .popover-button.secondary:hover {
+          color: #005391; }
+        #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-button.secondary:active, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-button.secondary:active, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-button.secondary:active, #antsomi-slidedown-container #antsomi-popover-dialog .popover-button.secondary:active, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-button.secondary:active, #antsomi-popover-container #antsomi-slidedown-dialog .popover-button.secondary:active, #antsomi-popover-container #antsomi-popover-dialog .slidedown-button.secondary:active, #antsomi-popover-container #antsomi-popover-dialog .popover-button.secondary:active {
+          color: #001f35; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .primary.slidedown-button + .secondary.slidedown-button, #antsomi-slidedown-container #antsomi-slidedown-dialog .primary.popover-button + .secondary.popover-button, #antsomi-slidedown-container #antsomi-popover-dialog .primary.slidedown-button + .secondary.slidedown-button, #antsomi-slidedown-container #antsomi-popover-dialog .primary.popover-button + .secondary.popover-button, #antsomi-popover-container #antsomi-slidedown-dialog .primary.slidedown-button + .secondary.slidedown-button, #antsomi-popover-container #antsomi-slidedown-dialog .primary.popover-button + .secondary.popover-button, #antsomi-popover-container #antsomi-popover-dialog .primary.slidedown-button + .secondary.slidedown-button, #antsomi-popover-container #antsomi-popover-dialog .primary.popover-button + .secondary.popover-button {
+      margin-right: 0.714em; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .slidedown-footer, #antsomi-slidedown-container #antsomi-slidedown-dialog .popover-footer, #antsomi-slidedown-container #antsomi-popover-dialog .slidedown-footer, #antsomi-slidedown-container #antsomi-popover-dialog .popover-footer, #antsomi-popover-container #antsomi-slidedown-dialog .slidedown-footer, #antsomi-popover-container #antsomi-slidedown-dialog .popover-footer, #antsomi-popover-container #antsomi-popover-dialog .slidedown-footer, #antsomi-popover-container #antsomi-popover-dialog .popover-footer {
+      position: relative; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .align-right, #antsomi-slidedown-container #antsomi-popover-dialog .align-right, #antsomi-popover-container #antsomi-slidedown-dialog .align-right, #antsomi-popover-container #antsomi-popover-dialog .align-right {
+      float: right; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .clearfix, #antsomi-slidedown-container #antsomi-popover-dialog .clearfix, #antsomi-popover-container #antsomi-slidedown-dialog .clearfix, #antsomi-popover-container #antsomi-popover-dialog .clearfix {
+      display: block;
+      -webkit-backface-visibility: initial !important;
+              backface-visibility: initial !important; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .clearfix:after, #antsomi-slidedown-container #antsomi-popover-dialog .clearfix:after, #antsomi-popover-container #antsomi-slidedown-dialog .clearfix:after, #antsomi-popover-container #antsomi-popover-dialog .clearfix:after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    #antsomi-slidedown-container #antsomi-slidedown-dialog .antsomi-tag-failure-message, #antsomi-slidedown-container #antsomi-popover-dialog .antsomi-tag-failure-message, #antsomi-popover-container #antsomi-slidedown-dialog .antsomi-tag-failure-message, #antsomi-popover-container #antsomi-popover-dialog .antsomi-tag-failure-message {
+      display: -ms-flexbox;
+      display: flex;
+      float: left;
+      color: red; }
+
+@keyframes slideDownEnter {
+  0% {
+    transform: translateY(-150%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes slideDownExit {
+  0% {
+    transform: translateY(0%); }
+  100% {
+    transform: translateY(-150%); } }
+
+@keyframes slideUpEnter {
+  0% {
+    transform: translateY(150%); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes slideUpExit {
+  0% {
+    transform: translateY(0%); }
+  100% {
+    transform: translateY(150%); } }
+
+.antsomi-validation-element-hidden {
+  display: none !important; }
