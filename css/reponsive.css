@@ -866,6 +866,7 @@ img {
 }
 svg {
     overflow: hidden;
+    
 }
 img, svg {
     vertical-align: middle;
