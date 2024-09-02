@@ -22317,7 +22317,7 @@ button, select {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px;
+    margin-left: -5px;
 }
 
 .float-button-wrapper.has-back-top {

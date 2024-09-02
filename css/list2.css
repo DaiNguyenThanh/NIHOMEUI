@@ -1579,6 +1579,7 @@
         .ehxPr.is-circle {
             padding: 10px 32px;
             border-radius: 60px;
+            border: none;
         }
 
         /*!sc*/
