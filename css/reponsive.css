@@ -43,7 +43,10 @@
 }
 
 
-@media screen and (max-width: 768px) {
+.sc-kmQMED {
+    display: block; 
+}
+ @media screen and (max-width: 768px) {
     .d-flex {
         flex-direction: column;
     }
@@ -51,6 +54,7 @@
     .sc-kmQMED {
         width: 100%; 
         margin-bottom: 1rem; 
+        display: none;
     }
 
     .sub-image-container {
@@ -133,7 +137,7 @@
 .sub-image {
     flex: 1 1 30%;
     object-fit: cover;
-    max-height: 100px;
+    max-height: 200px;
     margin: 0 5px;
 }
 
@@ -143,15 +147,41 @@
     font-size: 1.5rem;
     line-height: 1.2;
 }
-}
+} 
+
+
+
+ @media screen and (max-width: 768px) {
+    .sub-image-container {
+        display: flex;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory; 
+        -webkit-overflow-scrolling: touch; 
+        gap: 5px; 
+        padding: 0 5px; 
+        box-sizing: border-box;
+    }
+
+    .sub-image {
+        flex: 0 0 100%; 
+        scroll-snap-align: start; 
+        object-fit: cover; 
+        max-height: 200px; 
+        border-radius: 6px; 
+        margin: 0; 
+    }
+
+    .sub-image-container::-webkit-scrollbar {
+        display: none; 
+    }
+} 
+
 
 @media screen and (max-width: 576px) {
     .sub-image {
         flex: 1 1 45%; 
     }
-
-
-   
 
     .sc-eWfVMQ button {
         width: 100%;    
@@ -212,12 +242,7 @@
     gap: 5px;
 }
 
-.sub-image {
-    flex: 1 1 30%;
-    object-fit: cover;
-    max-height: 100px;
-    margin: 0 5px;
-}
+
 
 
 
