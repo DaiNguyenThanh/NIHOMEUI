@@ -1005,15 +1005,22 @@ button {
     }
 
     .button-container {
-        margin-left: 260px;   
-        margin-right: 20px;  
-        margin-top: -79px;  
+        margin-left: 307px;
+        margin-right: -5px;
+        margin-top: -70px;
+        width: 134px;
     }
 
     .primary-btn {
         padding: 0.5rem 1rem;          
         font-size: 1rem;               
     }
+    
+.container, .row, .carousel-inner, .sub-image-container {
+    width: 100%; 
+    max-width: 100%;
+    overflow-x: hidden; 
+}
 }
 
 .css-12qnib {
@@ -1114,4 +1121,38 @@ button {
 }
 
 
+body, html {
+    width: 100%;
+    overflow-x: hidden; 
+}
 
+
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sub-image {
+    width: 100%; 
+    max-width: 100%;
+    object-fit: cover;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+@media screen and (max-width: 576px) {
+    .btn-mvillage {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .btn-mvillage .ic {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+}
