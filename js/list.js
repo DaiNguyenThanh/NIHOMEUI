@@ -35,3 +35,8 @@ function topFunction() {
         behavior: "smooth"
     });
 }
+
+       
+setInterval(function () {
+    $('#carousel').carousel('next');
+}, 3000);
