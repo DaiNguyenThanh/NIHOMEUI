@@ -37,6 +37,7 @@ function topFunction() {
 }
 
        
-setInterval(function () {
-    $('#carousel').carousel('next');
-}, 3000);
+var myCarousel = document.getElementById('carouselSlideshow');
+var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000
+});
