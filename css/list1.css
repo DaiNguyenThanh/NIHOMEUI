@@ -21906,6 +21906,7 @@ button, select {
 
 .gXxniB .price-container {
     border-left: 1px solid rgb(246, 246, 246);
+    width: 100%;
 }
 
 .jYaNXo .brands {
@@ -22317,7 +22318,7 @@ button, select {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -5px;
+    margin-left: 4px;
 }
 
 .float-button-wrapper.has-back-top {
@@ -22607,7 +22608,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 *, :after, :before {
     box-sizing: border-box;
 }
-user agent stylesheet
+
 main {
     display: block;
     unicode-bidi: isolate;
