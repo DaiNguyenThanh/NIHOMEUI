@@ -22668,3 +22668,23 @@ main {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .hjowGE {
+        padding: 3px 6px; 
+    }
+
+    .dyExoy {
+        min-height: 20px; 
+        min-width: 20px; 
+    }
+
+    .hrSSWn {
+        max-width: 15px;
+        max-height: 15px;
+    }
+
+    .kVDaeR {
+        font-size: 10px; 
+        line-height: 16px; 
+    }
+}
