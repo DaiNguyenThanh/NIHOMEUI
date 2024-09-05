@@ -21838,6 +21838,7 @@ a:hover {
 .dUUaBf .sub-image-container {
     display: flex;
     gap: 2px;
+    height: 94px;
 }
 
 .bLkudg {
@@ -21907,6 +21908,7 @@ button, select {
 .gXxniB .price-container {
     border-left: 1px solid rgb(246, 246, 246);
     width: 100%;
+    margin-top: -35px;
 }
 
 .jYaNXo .brands {
