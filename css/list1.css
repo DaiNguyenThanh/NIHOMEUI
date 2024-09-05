@@ -22613,3 +22613,56 @@ main {
     display: block;
     unicode-bidi: isolate;
 }
+/* icon */
+.gHLJxj {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hjowGE {
+    border-radius: 76px;
+    background-color: rgb(253, 246, 242);
+    padding: 5px 10px;
+    display: flex;
+    margin-right: 8px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.mb-1, .my-1 {
+    margin-bottom: .25rem !important;
+}
+
+.mt-1, .my-1 {
+    margin-top: .25rem !important;
+}
+
+.dyExoy {
+    border-radius: 999px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: auto;
+    min-width: auto;
+    margin-right: 8px;
+}
+
+.hrSSWn {
+    max-width: 20px;
+    max-height: 20px;
+    border-radius: 0px !important;
+}
+
+.kVDaeR {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgb(19, 19, 19);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
