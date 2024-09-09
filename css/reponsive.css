@@ -26,7 +26,7 @@
 
     .price2 {
         margin-bottom: 0.5rem;
-        font-size: 1rem;
+      
     }
 
     .button-container {
@@ -747,7 +747,7 @@
     border-color: rgb(255, 117, 38);
 }
 
-.btn:not(:disabled):not(.disabled) {
+/* .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
     background-color:rgb(255, 117, 38) ;
     font-size: 14px;
@@ -756,7 +756,7 @@
     padding: 10px 16px;
     border-radius: 60px;
     color: white;
-}
+} */
 
 .knybCT .brand {
     width: 80px;
@@ -1063,11 +1063,15 @@ button {
         margin-left: 15px;
     }
 
-    
+    .card1{
+        font-size: small;
+    }
 
+    .price3{
+        font-size: x-large;
+    }
     .price2 {
         margin-bottom: 0.5rem;
-        font-size: 1rem;
     }
 
     .button-container {

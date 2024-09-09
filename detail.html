@@ -19,13 +19,15 @@
     <link rel="stylesheet" href="css/list2.css">
     <link rel="preload" href="css/list2.css" as="style" />
     <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/details3.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.typekit.net/xyz.css">
     <link rel="stylesheet" href="css/reponsive.css">
+    <link rel="stylesheet" href="css/reponsive_footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body style="overflow: auto; padding-right: 0px;" cz-shortcut-listen="true"></body>
@@ -43,7 +45,7 @@
                                     title="logo" placeholder="blur" /></a>
                         </div>
                         <div class="header-menu">
-                            <a class="header-menu__item" href="index.html">Lưu trú dài hạn</a>
+                            <a class="header-menu__item" href="list.html">Lưu trú dài hạn</a>
                             <a class="header-menu__item" href="customer.html">
                                 <span>Hội viên thân thiết</span>
                             </a>
@@ -274,16 +276,17 @@
                 <!-- breadcrumb -->
                 <nav style=" width: 1129px; margin-left: 32px;  --bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                     aria-label="breadcrumb" class="custom-breadcrumb py-3">
-                    <ol class="breadcrumb my-0" style="margin-left: -25px; margin-right: 21px;">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    <ol class="breadcrumb my-0" style="margin-left: -25px; margin-right: 21px; background-color: snow;">
+                        <li class="breadcrumb-item"><a href="list.html">Lưu trú dài hạn</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Chi tiết</li>
                     </ol>
+
                 </nav>
                 <!--end breadcrumb -->
 
                 <!-- grid picture -->
                 <div class="" id="galleryPicture">
-                    <div class="row gx-1 d-none d-lg-flex">
+                    <div class="row gx-1 d-none d-lg-flex ">
                         <div class="col-6">
                             <a href>
                                 <img class="w-100 h-100 rounded-1" src="./image/img1.webp" alt>
@@ -352,7 +355,7 @@
                 <!-- end grid picture -->
                 <!-- tab -->
                 <ul class="custom-navtab nav nav-pills mt-2 bg-white shadow-sm ps-md-4 flex-nowrap overflow-x-auto "
-                    id="pills-tab" role="tablist" style="margin-left: -25px; margin-right: 21px;">
+                    id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active fs-6" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -362,20 +365,20 @@
                     <li class="nav-item" role="presentation">
                         <a class="nav-link fs-6" id="pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false" href="#booking">Chọn phòng</a>
+                            aria-selected="false" href="#booking1">Chọn phòng</a>
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link fs-6" id="pills-contact-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                            aria-selected="false">Vị trí</a>
+                            aria-selected="false" href="#location">Vị trí</a>
                     </li>
 
                 </ul>
                 <!-- end tab -->
                 <!-- detail product -->
                 <div class data-bs-spy="scroll" data-bs-target="#pills-tab" data-bs-smooth-scroll="true" tabindex="0"
-                    data-bs-offset="0" style="margin-left: -25px; margin-right: 21px;">
-                    <div class="border border-1 p-2 p-md-4" id="Introduce">
+                    data-bs-offset="0">
+                    <div class="border border-1 p-2 p-md-4 reponsive-detail" id="Introduce">
                         <div class="row gx-3">
                             <div class="col-lg-8">
                                 <h1 class="my-3 display-5 fw-medium">Signature
@@ -400,25 +403,30 @@
                                     FASHION)</p>
                                 <h4 class="mb-4">Tiện nghi được ưu chuộng
                                     nhất</h4>
-                                <div class="row gx-4 gy-3" style="margin-left: -2px; margin-right: 21px;">
-                                    <div class="col-6 col-md-4 d-flex"><img src="./image/icon.png" width="26"
-                                            height="26" alt><span class="small">View thành
+                                <div class="row gx-4 gy-3"
+                                    style="margin-left: -2px; margin-right: 21px; padding: 15px;">
+                                    <div class="col-6 col-md-4 d-flex"><img src="./image/details/1687946450239-gym.png"
+                                            width="26" height="26" alt><span class="small">View thành
                                             phố</span></div>
-                                    <div class="col-6 col-md-4 d-flex"><img src="./image/icon.png" width="26"
-                                            height="26" alt><span class="small">View thành
+                                    <div class="col-6 col-md-4 d-flex"><img
+                                            src="/image/details/1689825391346-cityview.png" width="26" height="26"
+                                            alt><span class="small">View thành
                                             phố</span></div>
-                                    <div class="col-6 col-md-4 d-flex"><img src="./image/icon.png" width="26"
-                                            height="26" alt><span class="small">View thành
+                                    <div class="col-6 col-md-4 d-flex"><img
+                                            src="/image/details/1692874982244-Group 435.png" width="26" height="26"
+                                            alt><span class="small">View thành
                                             phố</span></div>
-                                    <div class="col-6 col-md-4 d-flex"><img src="./image/icon.png" width="26"
-                                            height="26" alt><span class="small">View thành
+                                    <div class="col-6 col-md-4 d-flex"><img
+                                            src="/image/details/1689825436403-workdesk.png" width="26" height="26"
+                                            alt><span class="small">View thành
                                             phố</span></div>
-                                    <div class="col-6 col-md-4 d-flex"><img src="./image/icon.png" width="26"
-                                            height="26" alt><span class="small">View thành
+                                    <div class="col-6 col-md-4 d-flex"><img
+                                            src="/image/details/1690735273084-Asset 198.png" width="26" height="26"
+                                            alt><span class="small">View thành
                                             phố</span></div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4" id="location">
                                 <div class>
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4456.481564252377!2d105.8481575!3d21.023025099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab69785275f5%3A0x1309c5553c16c776!2sSignature%20by%20M%20Village%20Th%E1%BB%A3%20Nhu%E1%BB%99m!5e1!3m2!1sen!2s!4v1724664207716!5m2!1sen!2s"
@@ -447,21 +455,29 @@
                     </div>
                     <!-- end detail product -->
                     <!-- booking -->
-                    <div id="booking" class="my-4">
-                        <h1>Lựa chọn phòng dành cho bạn
+                    <div id="booking" class="my-4 ">
+                        <h1 style="font-size: xx-large;">Lựa chọn phòng dành cho bạn
                         </h1>
                         <div class="sc-fvpsdx dIqcvS small-space-x-8" id="filter-container">
                             <div id="filter-occupancy-container"
                                 class="sc-dMOJrz dKLnhY filter-customer-box text-left filter-customer-box--contain">
                                 <div class="filter-customer-box__title-wrapper"><img
-                                        src="/images/svg/search-bar-room.svg" alt="icon">
+                                        src="image/details/search-bar-room.svg" alt="icon">
                                     <div class="filter-customer-box__desc-wrapper">
                                         <div class="title visible-desktop">Số khách &amp; Phòng</div>
                                         <div class="detail">
                                             <div><span class="count">2 </span><span class="count-label">Người lớn</span>
-                                            </div><span class="dot"></span>
+                                            </div><span class="dot" style="border-radius: 100%;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-top: 6px solid var(--color-gray-06);
+                                            margin-inline: 10px"></span>
                                             <div><span class="count">0 </span><span class="count-label">Trẻ em</span>
-                                            </div><span class="dot"></span>
+                                            </div><span class="dot" style="border-radius: 100%;
+                                            width: 6px;
+                                            height: 6px;
+                                            border-top: 6px solid var(--color-gray-06);
+                                            margin-inline: 10px"></span>
                                             <div><span class="count">0 </span><span class="count-label">Em bé</span>
                                             </div>
                                         </div>
@@ -472,22 +488,24 @@
                                 tabindex="0" type="button">Áp dụng<span
                                     class="MuiTouchRipple-root css-w0pj6f"></span></button>
                         </div>
-                        <div class="row mx--2 mt-2 gx-4 gy-2 product-item">
+                        <div class="row mx--2 mt-2 gx-4 gy-2 product-item" id="booking1">
                             <div class="col-md-6 col-xl-4 product-card ">
                                 <div class="border border-1 p-0 rounded-4">
                                     <div class="p-3 pb-1">
                                         <h4 class="mb-4">Phòng Studio</h4>
-                                        <div class="row">
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                        <div class="row list1">
+
+                                            <div class="col-4 d-flex">
+
+                                                <img src="image/details/area.svg" width="22" height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="image/details/bed-room.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="./image/details/people.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">2
                                                     người</p>
                                             </div>
@@ -532,17 +550,17 @@
                                     <div class="p-2">
 
                                         <div class="row my-2 gy-2">
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class>View thành
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1">View thành
                                                     phố</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class=" ">Bàn làm
+                                            <div class="d-flex"><img src="./image/details/1690735223455-breakfast.png"
+                                                    width="30" height="30" alt><span class="text_icon1 ">Bàn làm
                                                     việc</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">TV cao
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1  ">TV cao
                                                     cấp</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">Tủ lạnh
+                                            <div class="d-flex"><img src="./image/details/1687946549565-livingroom.png"
+                                                    width="30" height="30" alt><span class=" text_icon1 ">Tủ lạnh
                                                     mini</span></div>
 
                                         </div>
@@ -563,7 +581,8 @@
                                                     <div class>
                                                         <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                             còn 2 phòng</p>
-                                                        <a href class="btn btn-booking">Đặt
+                                                        <a href class="btn btn-booking primary-btn"
+                                                            style="font-size: small;">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -580,17 +599,19 @@
                                 <div class="border border-1 p-0 rounded-4">
                                     <div class="p-3 pb-1">
                                         <h4 class="mb-4">Phòng Studio</h4>
-                                        <div class="row">
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                        <div class="row list1">
+
+                                            <div class="col-4 d-flex">
+
+                                                <img src="image/details/area.svg" width="22" height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="image/details/bed-room.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="./image/details/people.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">2
                                                     người</p>
                                             </div>
@@ -635,23 +656,23 @@
                                     <div class="p-2">
 
                                         <div class="row my-2 gy-2">
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class>View thành
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1">View thành
                                                     phố</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class=" ">Bàn làm
+                                            <div class="d-flex"><img src="./image/details/1690735223455-breakfast.png"
+                                                    width="30" height="30" alt><span class="text_icon1 ">Bàn làm
                                                     việc</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">TV cao
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1  ">TV cao
                                                     cấp</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">Tủ lạnh
+                                            <div class="d-flex"><img src="./image/details/1687946549565-livingroom.png"
+                                                    width="30" height="30" alt><span class=" text_icon1 ">Tủ lạnh
                                                     mini</span></div>
 
                                         </div>
                                         <div class="p-2">
 
-                                            <div class="row">
+                                            <div class="row ">
                                                 <div class="col-7">
                                                     <span class=" fw-medium text-uppercase">Chỉ
                                                         từ</span>
@@ -666,7 +687,8 @@
                                                     <div class>
                                                         <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                             còn 2 phòng</p>
-                                                        <a href class="btn btn-booking">Đặt
+                                                        <a href class="btn btn-booking primary-btn"
+                                                            style="font-size: small;">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -683,17 +705,19 @@
                                 <div class="border border-1 p-0 rounded-4">
                                     <div class="p-3 pb-1">
                                         <h4 class="mb-4">Phòng Studio</h4>
-                                        <div class="row">
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                        <div class="row list1">
+
+                                            <div class="col-4 d-flex">
+
+                                                <img src="image/details/area.svg" width="22" height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="image/details/bed-room.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="./image/details/people.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">2
                                                     người</p>
                                             </div>
@@ -738,23 +762,23 @@
                                     <div class="p-2">
 
                                         <div class="row my-2 gy-2">
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class>View thành
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1">View thành
                                                     phố</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class=" ">Bàn làm
+                                            <div class="d-flex"><img src="./image/details/1690735223455-breakfast.png"
+                                                    width="30" height="30" alt><span class="text_icon1 ">Bàn làm
                                                     việc</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">TV cao
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1  ">TV cao
                                                     cấp</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">Tủ lạnh
+                                            <div class="d-flex"><img src="./image/details/1687946549565-livingroom.png"
+                                                    width="30" height="30" alt><span class=" text_icon1 ">Tủ lạnh
                                                     mini</span></div>
 
                                         </div>
                                         <div class="p-2">
 
-                                            <div class="row">
+                                            <div class="row ">
                                                 <div class="col-7">
                                                     <span class=" fw-medium text-uppercase">Chỉ
                                                         từ</span>
@@ -769,7 +793,8 @@
                                                     <div class>
                                                         <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                             còn 2 phòng</p>
-                                                        <a href class="btn btn-booking">Đặt
+                                                        <a href class="btn btn-booking primary-btn"
+                                                            style="font-size: small;">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -789,17 +814,19 @@
                                 <div class="border border-1 p-0 rounded-4">
                                     <div class="p-3 pb-1">
                                         <h4 class="mb-4">Phòng Studio</h4>
-                                        <div class="row">
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                        <div class="row list1">
+
+                                            <div class="col-4 d-flex">
+
+                                                <img src="image/details/area.svg" width="22" height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="image/details/bed-room.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="./image/details/people.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">2
                                                     người</p>
                                             </div>
@@ -844,17 +871,17 @@
                                     <div class="p-2">
 
                                         <div class="row my-2 gy-2">
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class>View thành
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1">View thành
                                                     phố</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class=" ">Bàn làm
+                                            <div class="d-flex"><img src="./image/details/1690735223455-breakfast.png"
+                                                    width="30" height="30" alt><span class="text_icon1 ">Bàn làm
                                                     việc</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">TV cao
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1  ">TV cao
                                                     cấp</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">Tủ lạnh
+                                            <div class="d-flex"><img src="./image/details/1687946549565-livingroom.png"
+                                                    width="30" height="30" alt><span class=" text_icon1 ">Tủ lạnh
                                                     mini</span></div>
 
                                         </div>
@@ -875,7 +902,8 @@
                                                     <div class>
                                                         <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                             còn 2 phòng</p>
-                                                        <a href class="btn btn-booking">Đặt
+                                                        <a href class="btn btn-booking primary-btn"
+                                                            style="font-size: small;">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -889,20 +917,22 @@
 
                             </div>
                             <div class="col-md-6 col-xl-4 product-card ">
-                                <div class="border border-1 p-0 rounded-4">
+                                <div class="border border-1 p-0 rounded-4" style="    box-sizing: border-box; ">
                                     <div class="p-3 pb-1">
                                         <h4 class="mb-4">Phòng Studio</h4>
-                                        <div class="row">
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                        <div class="row list1">
+
+                                            <div class="col-4 d-flex">
+
+                                                <img src="image/details/area.svg" width="22" height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="image/details/bed-room.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="./image/details/people.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">2
                                                     người</p>
                                             </div>
@@ -945,19 +975,18 @@
                                         </div>
                                     </div>
                                     <div class="p-2">
-
                                         <div class="row my-2 gy-2">
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class>View thành
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1">View thành
                                                     phố</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class=" ">Bàn làm
+                                            <div class="d-flex"><img src="./image/details/1690735223455-breakfast.png"
+                                                    width="30" height="30" alt><span class="text_icon1 ">Bàn làm
                                                     việc</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">TV cao
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1  ">TV cao
                                                     cấp</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">Tủ lạnh
+                                            <div class="d-flex"><img src="./image/details/1687946549565-livingroom.png"
+                                                    width="30" height="30" alt><span class=" text_icon1 ">Tủ lạnh
                                                     mini</span></div>
 
                                         </div>
@@ -978,7 +1007,8 @@
                                                     <div class>
                                                         <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                             còn 2 phòng</p>
-                                                        <a href class="btn btn-booking">Đặt
+                                                        <a href class="btn btn-booking primary-btn"
+                                                            style="font-size: small;">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -995,17 +1025,19 @@
                                 <div class="border border-1 p-0 rounded-4">
                                     <div class="p-3 pb-1">
                                         <h4 class="mb-4">Phòng Studio</h4>
-                                        <div class="row">
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                        <div class="row list1">
+
+                                            <div class="col-4 d-flex">
+
+                                                <img src="image/details/area.svg" width="22" height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="image/details/bed-room.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">King</p>
                                             </div>
-                                            <div class="col-4 d-flex"><img src="./image/icon.png" width="22" height="22"
-                                                    alt>
+                                            <div class="col-4 d-flex"><img src="./image/details/people.svg" width="22"
+                                                    height="22" alt>
                                                 <p class="small">2
                                                     người</p>
                                             </div>
@@ -1050,17 +1082,17 @@
                                     <div class="p-2">
 
                                         <div class="row my-2 gy-2">
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class>View thành
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1">View thành
                                                     phố</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class=" ">Bàn làm
+                                            <div class="d-flex"><img src="./image/details/1690735223455-breakfast.png"
+                                                    width="30" height="30" alt><span class="text_icon1 ">Bàn làm
                                                     việc</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">TV cao
+                                            <div class="d-flex"><img src="./image/details/1689825391346-cityview.png"
+                                                    width="30" height="30" alt><span class="text_icon1  ">TV cao
                                                     cấp</span></div>
-                                            <div class="d-flex"><img src="./image/icon.png" width="30" height="30"
-                                                    alt><span class="  ">Tủ lạnh
+                                            <div class="d-flex"><img src="./image/details/1687946549565-livingroom.png"
+                                                    width="30" height="30" alt><span class=" text_icon1 ">Tủ lạnh
                                                     mini</span></div>
 
                                         </div>
@@ -1081,7 +1113,8 @@
                                                     <div class>
                                                         <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                             còn 2 phòng</p>
-                                                        <a href class="btn btn-booking">Đặt
+                                                        <a href class="btn btn-booking primary-btn"
+                                                            style="font-size: small;">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -1156,23 +1189,21 @@
                 </div>
                 <!-- end position -->
                 <div id="booking" class="my-4">
-                    <h1>Các chi nhánh khác của MVillage
+                    <h1 style="font-size: xx-large;">Các chi nhánh khác của MVillage
                     </h1>
                     <div class="row mx--2 mt-2 gx-4 gy-2 product-item">
                         <div class="col-md-6 col-xl-4 product-card ">
                             <div class="border border-1 p-0 rounded-4">
-
-
                                 <div class>
-                                    <div id="carouselExampleIndicators1" class="carousel slide z-0 custom-carousel"
+                                    <div id="carouselExampleIndicators7" class="carousel slide z-0 custom-carousel"
                                         data-bs-ride="true">
                                         <div class="carousel-indicators custom-carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators1"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators7"
                                                 data-bs-slide-to="0" class="active" aria-current="true"
                                                 aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators1"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators7"
                                                 data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators1"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators7"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
@@ -1187,12 +1218,12 @@
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleIndicators7" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleIndicators7" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -1200,20 +1231,12 @@
                                 </div>
                                 <div class="p-2">
 
-                                    <div class="row my-2 gy-2">
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class>View thành
-                                                phố</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class=" ">Bàn làm
-                                                việc</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">TV cao
-                                                cấp</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">Tủ lạnh
-                                                mini</span></div>
-
+                                    <div class="px-3 my-2">
+                                        <h2 class="sc-kHOZwM faNteN cursor-pointer" style="font-size: medium;">
+                                            <div>Express by M Village</div>
+                                            <div> Nguyễn Du</div>
+                                        </h2>
+                                        <div class="sc-hOGkXu hwUZzc">157 Nguyễn Du, P. Bến Thành, Q.1, HCM</div>
                                     </div>
                                     <div class="p-2">
 
@@ -1232,7 +1255,8 @@
                                                 <div class>
                                                     <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                         còn 2 phòng</p>
-                                                    <a href class="btn btn-booking">Đặt
+                                                    <a href class="btn btn-booking primary-btn"
+                                                        style="font-size: small;">Đặt
                                                         phòng</a>
                                                 </div>
 
@@ -1250,15 +1274,15 @@
 
 
                                 <div class>
-                                    <div id="carouselExampleIndicators2" class="carousel slide z-0 custom-carousel"
+                                    <div id="carouselExampleIndicators8" class="carousel slide z-0 custom-carousel"
                                         data-bs-ride="true">
                                         <div class="carousel-indicators custom-carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators8"
                                                 data-bs-slide-to="0" class="active" aria-current="true"
                                                 aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators8"
                                                 data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators2"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators8"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
@@ -1273,12 +1297,12 @@
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleIndicators8" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleIndicators8" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -1286,20 +1310,12 @@
                                 </div>
                                 <div class="p-2">
 
-                                    <div class="row my-2 gy-2">
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class>View thành
-                                                phố</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class=" ">Bàn làm
-                                                việc</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">TV cao
-                                                cấp</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">Tủ lạnh
-                                                mini</span></div>
-
+                                    <div class="px-3 my-2">
+                                        <h2 class="sc-kHOZwM faNteN cursor-pointer" style="font-size: medium;">
+                                            <div>Express by M Village</div>
+                                            <div> Nguyễn Du</div>
+                                        </h2>
+                                        <div class="sc-hOGkXu hwUZzc">157 Nguyễn Du, P. Bến Thành, Q.1, HCM</div>
                                     </div>
                                     <div class="p-2">
 
@@ -1318,7 +1334,8 @@
                                                 <div class>
                                                     <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                         còn 2 phòng</p>
-                                                    <a href class="btn btn-booking">Đặt
+                                                    <a href class="btn btn-booking primary-btn"
+                                                        style="font-size: small;">Đặt
                                                         phòng</a>
                                                 </div>
 
@@ -1335,15 +1352,15 @@
                             <div class="border border-1 p-0 rounded-4">
 
                                 <div class>
-                                    <div id="carouselExampleIndicators3" class="carousel slide z-0 custom-carousel"
+                                    <div id="carouselExampleIndicators9" class="carousel slide z-0 custom-carousel"
                                         data-bs-ride="true">
                                         <div class="carousel-indicators custom-carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators3"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators9"
                                                 data-bs-slide-to="0" class="active" aria-current="true"
                                                 aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators3"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators9"
                                                 data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators3"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators9"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
@@ -1358,12 +1375,12 @@
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleIndicators9" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleIndicators9" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -1371,20 +1388,12 @@
                                 </div>
                                 <div class="p-2">
 
-                                    <div class="row my-2 gy-2">
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class>View thành
-                                                phố</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class=" ">Bàn làm
-                                                việc</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">TV cao
-                                                cấp</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">Tủ lạnh
-                                                mini</span></div>
-
+                                    <div class="px-3 my-2">
+                                        <h2 class="sc-kHOZwM faNteN cursor-pointer" style="font-size: medium;">
+                                            <div>Express by M Village</div>
+                                            <div> Nguyễn Du</div>
+                                        </h2>
+                                        <div class="sc-hOGkXu hwUZzc">157 Nguyễn Du, P. Bến Thành, Q.1, HCM</div>
                                     </div>
                                     <div class="p-2">
 
@@ -1403,7 +1412,8 @@
                                                 <div class>
                                                     <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                         còn 2 phòng</p>
-                                                    <a href class="btn btn-booking">Đặt
+                                                    <a href class="btn btn-booking primary-btn"
+                                                        style="font-size: small;">Đặt
                                                         phòng</a>
                                                 </div>
 
@@ -1424,15 +1434,15 @@
 
 
                                 <div class>
-                                    <div id="carouselExampleIndicators4" class="carousel slide z-0 custom-carousel"
+                                    <div id="carouselExampleIndicators10" class="carousel slide z-0 custom-carousel"
                                         data-bs-ride="true">
                                         <div class="carousel-indicators custom-carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators4"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators10"
                                                 data-bs-slide-to="0" class="active" aria-current="true"
                                                 aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators4"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators10"
                                                 data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators4"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators10"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
@@ -1447,12 +1457,12 @@
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleIndicators10" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleIndicators10" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -1460,20 +1470,12 @@
                                 </div>
                                 <div class="p-2">
 
-                                    <div class="row my-2 gy-2">
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class>View thành
-                                                phố</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class=" ">Bàn làm
-                                                việc</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">TV cao
-                                                cấp</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">Tủ lạnh
-                                                mini</span></div>
-
+                                    <div class="px-3 my-2">
+                                        <h2 class="sc-kHOZwM faNteN cursor-pointer" style="font-size: medium;">
+                                            <div>Express by M Village</div>
+                                            <div> Nguyễn Du</div>
+                                        </h2>
+                                        <div class="sc-hOGkXu hwUZzc">157 Nguyễn Du, P. Bến Thành, Q.1, HCM</div>
                                     </div>
                                     <div class="p-2">
 
@@ -1492,7 +1494,8 @@
                                                 <div class>
                                                     <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                         còn 2 phòng</p>
-                                                    <a href class="btn btn-booking">Đặt
+                                                    <a href class="btn btn-booking primary-btn"
+                                                        style="font-size: small;">Đặt
                                                         phòng</a>
                                                 </div>
 
@@ -1510,15 +1513,15 @@
 
 
                                 <div class>
-                                    <div id="carouselExampleIndicators5" class="carousel slide z-0 custom-carousel"
+                                    <div id="carouselExampleIndicators11" class="carousel slide z-0 custom-carousel"
                                         data-bs-ride="true">
                                         <div class="carousel-indicators custom-carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators5"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators11"
                                                 data-bs-slide-to="0" class="active" aria-current="true"
                                                 aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators5"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators11"
                                                 data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators5"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators11"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
@@ -1533,33 +1536,24 @@
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleIndicators11" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleIndicators11" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
                                 </div>
                                 <div class="p-2">
-
-                                    <div class="row my-2 gy-2">
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class>View thành
-                                                phố</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class=" ">Bàn làm
-                                                việc</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">TV cao
-                                                cấp</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">Tủ lạnh
-                                                mini</span></div>
-
+                                    <div class="px-3 my-2">
+                                        <h2 class="sc-kHOZwM faNteN cursor-pointer" style="font-size: medium;">
+                                            <div>Express by M Village</div>
+                                            <div> Nguyễn Du</div>
+                                        </h2>
+                                        <div class="sc-hOGkXu hwUZzc">157 Nguyễn Du, P. Bến Thành, Q.1, HCM</div>
                                     </div>
                                     <div class="p-2">
 
@@ -1578,7 +1572,8 @@
                                                 <div class>
                                                     <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                         còn 2 phòng</p>
-                                                    <a href class="btn btn-booking">Đặt
+                                                    <a href class="btn btn-booking primary-btn"
+                                                        style="font-size: small;">Đặt
                                                         phòng</a>
                                                 </div>
 
@@ -1596,15 +1591,15 @@
 
 
                                 <div class>
-                                    <div id="carouselExampleIndicators6" class="carousel slide z-0 custom-carousel"
+                                    <div id="carouselExampleIndicators12" class="carousel slide z-0 custom-carousel"
                                         data-bs-ride="true">
                                         <div class="carousel-indicators custom-carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators6"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators12"
                                                 data-bs-slide-to="0" class="active" aria-current="true"
                                                 aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators6"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators12"
                                                 data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators6"
+                                            <button type="button" data-bs-target="#carouselExampleIndicators12"
                                                 data-bs-slide-to="2" aria-label="Slide 3"></button>
                                         </div>
                                         <div class="carousel-inner">
@@ -1619,12 +1614,12 @@
                                             </div>
                                         </div>
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleIndicators6" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleIndicators12" data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleIndicators6" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleIndicators12" data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -1632,20 +1627,12 @@
                                 </div>
                                 <div class="p-2">
 
-                                    <div class="row my-2 gy-2">
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class>View thành
-                                                phố</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class=" ">Bàn làm
-                                                việc</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">TV cao
-                                                cấp</span></div>
-                                        <div class="d-flex"><img src="./image/icon.png" width="30" height="30" alt><span
-                                                class="  ">Tủ lạnh
-                                                mini</span></div>
-
+                                    <div class="px-3 my-2">
+                                        <h2 class="sc-kHOZwM faNteN cursor-pointer" style="font-size: medium;">
+                                            <div>Express by M Village</div>
+                                            <div> Nguyễn Du</div>
+                                        </h2>
+                                        <div class="sc-hOGkXu hwUZzc">157 Nguyễn Du, P. Bến Thành, Q.1, HCM</div>
                                     </div>
                                     <div class="p-2">
 
@@ -1664,7 +1651,8 @@
                                                 <div class>
                                                     <p class="text-danger mb-1 small fw-medium text-center">Chỉ
                                                         còn 2 phòng</p>
-                                                    <a href class="btn btn-booking">Đặt
+                                                    <a href class="btn btn-booking primary-btn"
+                                                        style="font-size: small;">Đặt
                                                         phòng</a>
                                                 </div>
 
@@ -1851,7 +1839,8 @@
                                                             còn 2 phòng</p>
                                                     </div>
                                                     <div class="col-12 order-1 order-lg-0 p-0 mb-2">
-                                                        <a href class="btn btn-booking w-100 order-1 w-100">Đặt
+                                                        <a href class="btn btn-booking primary-btn" w-100 order-1
+                                                            w-100">Đặt
                                                             phòng</a>
                                                     </div>
 
@@ -1870,7 +1859,7 @@
         </div>
         <!-- End Modal Preview Product   -->
         <!-- Modal Gallery Picture -->
-        <div class="modal fade" id="GalleryPictureModal" tabindex="-1" aria-hidden="true">
+        <div class="modal fade " id="GalleryPictureModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable" style="max-width: 1080px;">
                 <div class="modal-content">
                     <div class="modal-header p-4 border-bottom">
@@ -1967,21 +1956,21 @@
                 </div>
             </div>
         </div>
+
         <footer>
-            <div class="sc-fTxOGA LEOYk ">
+            <div class="sc-fTxOGA LEOYk">
                 <div class="sc-BHvUt jVGtjY">
                     <div class="sc-bjeSbO SZuKi shareThought">
                         <div>
-                            <div class="title-2-semi-bold-white">Trải nghiệm của bạn tại M VILLAGE rất quan
-                                trọng với chúng
+                            <div class="title-2-semi-bold-white">Trải nghiệm của bạn tại M VILLAGE rất
+                                quan trọng với chúng
                                 tôi</div>
-                            <div class="body-1-regular-c9cbcc">Chia sẻ suy nghĩ của bạn để chúng tôi có thể
-                                tạo
-                                ra trải
+                            <div class="body-1-regular-c9cbcc">Chia sẻ suy nghĩ của bạn để chúng tôi có
+                                thể tạo ra trải
                                 nghiệm tốt hơn cho bạn lần sau</div>
                         </div>
-                        <button class="body-2-medium-f16a24"><a href="#" style=" color: white;
-    text-decoration: none;">Chia sẻ
+                        <button class="body-2-medium-f16a24"><a href="https://www.messenger.com/t/mvillagecoliving">Chia
+                                sẻ
                                 suy nghĩ của bạn</a></button>
                     </div>
                     <div class="sc-bjeSbO SZuKi hotlineEmail">
@@ -1992,9 +1981,8 @@
                             </span>
                             <div class="email-hotline-content">
                                 <div class="body-2-regular-white">Hotline</div>
-                                <div class="title-2-semi-bold-white"><a href="tel:1900 3311" style=" color: white;
-    text-decoration: none;">1900 3311</a>
-                                </div>
+                                <div class="title-2-semi-bold-white"><a href="tel:1900 3311">1900
+                                        3311</a></div>
                             </div>
                         </div>
                         <div class="hotline-email-wrapper">
@@ -2004,30 +1992,34 @@
                             </span>
                             <div class="email-hotline-content">
                                 <div class="body-2-regular-white">Email</div>
-                                <div class="title-2-semi-bold-white"><a href="mailto:booking@mvillage.vn" style=" color: white;
-    text-decoration: none;">booking@mvillage.vn</a></div>
+                                <div class="title-2-semi-bold-white"><a
+                                        href="mailto:booking@mvillage.vn">booking@mvillage.vn</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="sc-bjeSbO SZuKi followUsVia">
                         <div class="title-2-semi-bold-white">Theo dõi chúng tôi qua</div>
                         <div class="social-media-container">
-                            <a href="#"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                            <a href="https://www.facebook.com/Mvillagecoliving"><span
+                                    class=" lazy-load-image-background blur lazy-load-image-loaded"
                                     style="color: transparent; display: inline-block; height: 50px; width: 50px;">
                                     <img src="image/facebook-outline.svg" width="50" height="50" alt="facebook"
                                         title="facebook">
                                 </span></a>
-                            <a href="#"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                            <a href="https://www.instagram.com/mvillage_hotel"><span
+                                    class=" lazy-load-image-background blur lazy-load-image-loaded"
                                     style="color: transparent; display: inline-block; height: 50px; width: 50px;">
                                     <img src="image/instagram-outline.svg" width="50" height="50" alt="instagram"
                                         title="instagram">
                                 </span></a>
-                            <a href="#"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                            <a href="https://www.tiktok.com/@mvillagevietnam"><span
+                                    class=" lazy-load-image-background blur lazy-load-image-loaded"
                                     style="color: transparent; display: inline-block; height: 50px; width: 50px;">
                                     <img src="image/tiktok-outline.svg" width="50" height="50" alt="tiktok"
                                         title="tiktok">
                                 </span></a>
-                            <a href="#"><span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                            <a href="https://www.linkedin.com/company/mvillagevietnam/"><span
+                                    class=" lazy-load-image-background blur lazy-load-image-loaded"
                                     style="color: transparent; display: inline-block; height: 50px; width: 50px;">
                                     <img src="image/linkedin-outline.svg" width="50" height="50" alt="linkedin"
                                         title="linkedin">
@@ -2039,87 +2031,184 @@
                 <div class="sc-hgKiOD bIferO">
                     <div class="sc-fivaXQ bYngFR">
                         <div class="sc-fivaXQ bYngFR mvillage-more">
-                            <div class="body-1-semi-bold-f16a24">M VILLAGE MORE</div>
-                            <div class="content-wrapper body-2-regular-white ">
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Đặc quyền hội viên</a>
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Chính sách & Điều khoản MORE</a>
+                            <!-- <div class="body-1-semi-bold-f16a24" onclick="toggleCollapse()">
+                                M VILLAGE MORE <span class="plus-icon">+</span>
+                            </div>
+                            <div class="content-wrapper body-2-regular-white" id="collapseContent">
+                                <a href="https://vieclam.mvillage.vn">Đặc quyền hội viên</a>
+                                <a href="https://vieclam.mvillage.vn">Chính sách & Điều khoản MORE</a>
+                            </div> -->
+                            <div class="body-1-semi-bold-f16a24 d-none d-md-block">
+                                M VILLAGE MORE
+                                <div class="content-wrapper body-2-regular-white" style="margin-top: 11px;">
+                                    <a href="https://vieclam.mvillage.vn">Đặc quyền hội viên</a>
+                                    <a href="https://vieclam.mvillage.vn">Chính sách & Điều khoản MORE</a>
+                                </div>
+                            </div>
+                            <!-- Trigger for Collapsible Section (visible only on small screens) -->
+                            <div class="body-1-semi-bold-f16a24 d-flex d-sm-none align-items-center text1 hidden"
+                                data-toggle="collapse" href="#collapseLinks1" role="button" aria-expanded="false"
+                                aria-controls="collapseLinks1" style="cursor: pointer; margin-bottom: -17px;">
+                                M VILLAGE MORE
+                                <span class="plus-icon accessory-text1" style="padding-left: 150px;">+</span>
+                            </div>
+
+                            <!-- Collapsible Content (visible only on small screens) -->
+                            <div class="collapse" id="collapseLinks1">
+                                <div class="content-wrapper body-2-regular-white">
+                                    <a href="https://vieclam.mvillage.vn" style="margin-top: 7px;">Đặc quyền hội
+                                        viên</a>
+                                    <a href="https://vieclam.mvillage.vn">Chính sách & Điều khoản MORE</a>
+                                </div>
                             </div>
                         </div>
                         <div class="sc-fivaXQ bYngFR mvillage">
-                            <div class="body-1-semi-bold-f16a24">M VILLAGE</div>
-                            <div class="content-wrapper body-2-regular-white ">
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Về chúng tôi</a>
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Tuyển dụng</a>
+                            <!-- <div class="body-1-semi-bold-f16a24">M VILLAGE</div>
+                            <div class="content-wrapper body-2-regular-white">
+                                <a href="https://vieclam.mvillage.vn">Về chúng tôi</a>
+                                <a href="https://vieclam.mvillage.vn">Tuyển dụng</a>
                                 <a>Đăng nhập/Đăng ký</a>
+                            </div> -->
+                            <!-- Content visible on all screens -->
+                            <div class="body-1-semi-bold-f16a24 d-none d-md-block">
+                                M VILLAGE
+                                <div class="content-wrapper body-2-regular-white" style="margin-top: 11px;">
+                                    <a href="https://vieclam.mvillage.vn">Về chúng tôi</a>
+                                    <a href="https://vieclam.mvillage.vn">Tuyển dụng</a>
+                                    <a href="#">Đăng nhập/Đăng ký</a>
+                                </div>
+                            </div>
+
+                            <!-- Trigger for Collapsible Section (visible only on small screens) -->
+                            <div class="body-1-semi-bold-f16a24 d-flex d-sm-none align-items-center text2"
+                                data-toggle="collapse" href="#collapseLinks" role="button" aria-expanded="false"
+                                aria-controls="collapseLinks" style="cursor: pointer;">
+                                M VILLAGE
+                                <span class="plus-icon accessory-text2" style="padding-left: 202px" ;>+</span>
+                            </div>
+
+                            <!-- Collapsible Content (visible only on small screens) -->
+                            <div class="collapse" id="collapseLinks">
+                                <div class="content-wrapper body-2-regular-white">
+                                    <a href="https://vieclam.mvillage.vn">Về chúng tôi</a>
+                                    <a href="https://vieclam.mvillage.vn">Tuyển dụng</a>
+                                    <a href="#">Đăng nhập/Đăng ký</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="sc-fivaXQ bYngFR">
+                        <!-- <div class="sc-fivaXQ bYngFR">
+                            <div class="body-1-semi-bold-f16a24">ĐẶT PHÒNG</div>
+                            <div class="content-wrapper body-2-regular-white">
+                                <a href="https://vieclam.mvillage.vn">Lưu trú dài hạn</a>
+                            </div>
+                        </div> -->
+                        <div class="body-1-semi-bold-f16a24 d-none d-md-block">
+                            ĐẶT PHÒNG
+                            <div class="content-wrapper body-2-regular-white" style="margin-top: 11px;">
+                                <a href="https://vieclam.mvillage.vn">Lưu trú dài hạn</a>
+                            </div>
+                        </div>
+
+                        <!-- Trigger for Collapsible Section (visible only on small screens) -->
+                        <div class="body-1-semi-bold-f16a24 d-flex d-sm-none align-items-center text3"
+                            data-toggle="collapse" href="#collapseLinks2" role="button" aria-expanded="false"
+                            aria-controls="collapseLinks2" style="cursor: pointer;">
+                            ĐẶT PHÒNG
+                            <span class="plus-icon accessory-text2" style="padding-left: 192px;">+</span>
+                        </div>
+
+                        <!-- Collapsible Content (visible only on small screens) -->
+                        <div class="collapse" id="collapseLinks2">
+                            <div class="content-wrapper body-2-regular-white">
+                                <a href="https://vieclam.mvillage.vn">Lưu trú dài hạn</a>
+                            </div>
+                        </div>
+
+                        <div class="sc-fivaXQ bYngFR">
+                            <!-- <div class="body-1-semi-bold-f16a24">CHÍNH SÁCH</div>
+                            <div class="content-wrapper body-2-regular-white">
+                                <a href="https://vieclam.mvillage.vn">Chính sách bảo mật</a>
+                                <a href="https://vieclam.mvillage.vn">Chính sách giao và nhận phòng</a>
+                                <a href="https://vieclam.mvillage.vn">Chính sách đổi, trả phòng và hoàn
+                                    tiền</a>
+                                <a href="https://vieclam.mvillage.vn">Hỏi đáp - FAQs</a>
+                            </div> -->
+                            <div class="body-1-semi-bold-f16a24 d-none d-md-block">
+                                CHÍNH SÁCH
+                                <div class="content-wrapper body-2-regular-white" style="margin-top: 11px;">
+                                    <a href="https://vieclam.mvillage.vn">Chính sách bảo mật</a>
+                                    <a href="https://vieclam.mvillage.vn">Chính sách giao và nhận phòng</a>
+                                    <a href="https://vieclam.mvillage.vn">Chính sách đổi, trả phòng và hoàn
+                                        tiền</a>
+                                    <a href="https://vieclam.mvillage.vn">Hỏi đáp - FAQs</a>
+                                </div>
+                            </div>
+
+                            <!-- Trigger for Collapsible Section (visible only on small screens) -->
+                            <div class="body-1-semi-bold-f16a24 d-flex d-sm-none align-items-center text4"
+                                data-toggle="collapse" href="#collapseLinks3" role="button" aria-expanded="false"
+                                aria-controls="collapseLinks3" style="cursor: pointer; margin-top: -17px;">
+                                CHÍNH SÁCH
+                                <span class="plus-icon accessory-text2" style="padding-left: 190px;">+</span>
+                            </div>
+
+                            <!-- Collapsible Content (visible only on small screens) -->
+                            <div class="collapse" id="collapseLinks3">
+                                <div class="content-wrapper body-2-regular-white">
+                                    <a href="https://vieclam.mvillage.vn">Chính sách bảo mật</a>
+                                    <a href="https://vieclam.mvillage.vn">Chính sách giao và nhận phòng</a>
+                                    <a href="https://vieclam.mvillage.vn">Chính sách đổi, trả phòng và hoàn
+                                        tiền</a>
+                                    <a href="https://vieclam.mvillage.vn">Hỏi đáp - FAQs</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="sc-fivaXQ bYngFR">
-                        <div class="sc-fivaXQ bYngFR">
-                            <div class="body-1-semi-bold-f16a24">ĐẶT PHÒNG</div>
-                            <div class="content-wrapper body-2-regular-white">
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Lưu trú dài hạn</a>
-                            </div>
-                        </div>
-                        <div class="sc-fivaXQ bYngFR">
-                            <div class="body-1-semi-bold-f16a24">CHÍNH SÁCH</div>
-                            <div class="content-wrapper body-2-regular-white">
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Chính sách bảo mật</a>
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Chính sách giao và nhận phòng</a>
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Chính sách đổi, trả phòng và hoàn tiền</a>
-                                <a href="#" style=" color: white;
-    text-decoration: none;">Hỏi đáp - FAQs</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sc-eJRTFu jhMvGS">
-                        <div class="sc-hlGDCY hdHwcz"><a class="logo-wrapper" href="/">
-                                <span
-                                    style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-                                    <img alt="logo" title="logo" src="image/logo-mvillage-w.png" decoding="async"
-                                        data-nimg="fill"
-                                        style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
-                                        sizes="100vw"
-                                        srcset="image/logo-mvillage-w.png 640w, image/logo-mvillage-w.png 750w, image/logo-mvillage-w.png 828w, image/logo-mvillage-w.png 1080w, image/logo-mvillage-w.png 1200w, image/logo-mvillage-w.png 1920w, image/logo-mvillage-w.png 2048w, image/logo-mvillage-w.png 3840w">
-                                </span>
-                            </a>
+                        <div class="sc-hKTqa geYlSB">
+
                             <div class="download-wrapper">
-                                <div class="title-sub1-regular-c9cbcc">Tải Ứng dụng M Village - Khám phá ưu
-                                    đãi
-                                    ngay!</div>
-                                <div class="download"><a href="#"><span
-                                            class=" lazy-load-image-background blur lazy-load-image-loaded"
-                                            style="color: transparent; display: inline-block; height: 32px; width: 100px;"><img
-                                                src="image/app-store-download.png" width="100" height="32"></span></a><a
-                                        href="#&amp;hl=en-VN"><span
-                                            class=" lazy-load-image-background blur lazy-load-image-loaded"
-                                            style="color: transparent; display: inline-block; height: 32px; width: 100px;"><img
-                                                src="image/google-play-download.png" width="100" height="32"></span></a>
+                                <div class="title-sub1-regular-c9cbcc">Tải Ứng dụng M Village - Khám phá
+                                    ưu đãi ngay!</div>
+                                <div class="download">
+                                    <a href="https://apps.apple.com/vn/app/m-village/id6458690802">
+                                        <span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                                            style="color: transparent; display: inline-block; height: 32px; width: 100px;">
+                                            <img src="image/app-store-download.png" width="100" height="32">
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.mvillage.app&amp;hl=en-VN">
+                                        <span class=" lazy-load-image-background blur lazy-load-image-loaded"
+                                            style="color: transparent; display: inline-block; height: 32px; width: 100px;">
+                                            <img src="image/google-play-download.png" width="100" height="32">
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div class="body-1-semi-bold-f16a24">LIÊN HỆ</div>
                         <div class="content-wrapper body-2-regular-white">
-                            <div>Giấy phép Dịch vụ Lưu Trú số 256/GCN, ngày cấp 05-07-2023, nơi cấp Công An
-                                Thành Phố Hồ Chí Minh</div>
-                        </div><a href="#"><img src="image//gov-logo-sale-noti.png" class="sc-fGoOlv jQQumm"></a>
+                            <div>Giấy phép Dịch vụ Lưu Trú số 256/GCN, ngày cấp 05-07-2023, nơi cấp Công
+                                An Thành phố Hồ Chí
+                                Minh</div>
+                        </div>
+                        <a href="http://online.gov.vn/Home/WebDetails/108792">
+                            <img src="image/gov-logo-sale-noti.png" class="sc-lgarKF gPedic">
+                        </a>
                     </div>
                 </div>
                 <div class="sc-gfqkcP WhDkz">
                     <hr class="sc-ckRZPU kRGcSJ">
                     <div class="legal-container">
                         <div class="title-sub1-regular-white">
-                            <span>© CÔNG TY CỔ PHẦN MVILLAGE<br>Mã số doanh nghiệp: 0316527995. Giấy chứng
-                                nhận
-                                đăng ký
+                            <span>© CÔNG TY CỔ PHẦN MVILLAGE<br>Mã số doanh nghiệp: 0316527995. Giấy
+                                chứng nhận đăng ký
                                 doanh nghiệp do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp ngày
                                 12/10/2020.</span>
                         </div>
@@ -2147,6 +2236,12 @@
 <!-- custom script -->
 <script src="./js/detail.js"></script>
 <!-- end custom script -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- For Bootstrap 5 (no need for jQuery): -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -3073,3 +3073,20 @@
     data-styled.g298[id="sc-bjztik"] {
         content: "ijPUgD,"
     }
+
+    .fGUaeE .banner-image img {
+        width: 100%;
+    }
+
+    .fGUaeE .banner-image {
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    .justify-content-center {
+        justify-content: center !important;
+    }
+    
+    .d-flex {
+        display: flex !important;
+    }

@@ -1,0 +1,124 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container,
+.row,
+.column {
+    max-width: 100%;
+    box-sizing: border-box
+}
+
+
+
+.primary-btn {
+    background-color: var(--primary-orange) !important;
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 10px 16px;
+    border-radius: 60px;
+    background-color: rgb(255, 117, 38);
+    border: none;
+    color: rgb(255, 255, 255);
+    width: auto;
+    font-size: small;
+}
+
+.bWIwaw {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 10px 16px;
+    border-radius: 60px;
+    background-color: rgb(255, 117, 38);
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.list2 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: auto;
+}
+
+ 
+ 
+@media (max-width: 768px) {
+    #filter-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filter-occupancy-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center; 
+        max-width: 300px; 
+        padding: 10px;
+    }
+
+   
+
+    .filter-customer-box__desc-wrapper .detail {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filter-customer-box__desc-wrapper .detail div {
+        display: inline-block;
+    }
+
+    .MuiButton-root {
+        width: 100%;
+        max-width: 250px; 
+    }
+
+    .count-label, .count {
+        font-size: 14px;
+    }
+
+    .dot {
+        display: none; 
+    }
+   
+}
+
+/* .galleryPicture{
+    width: 1300px;
+} */
+
+.bwTRGF .filter-customer-box__desc-wrapper .detail .dot {
+    border-radius: 100%;
+    width: 6px;
+    height: 6px;
+    border-top: 6px solid var(--color-gray-06);
+    margin-inline: 10px;
+}
+.list1 {
+    max-height: 20px;
+}
+
+@media (max-width: 768px) {
+    .list1 {
+        max-height: 82px;
+        margin-top: -21px;}
+        .text_icon1{
+            margin-left: 44px;
+            margin-top: -19px;
+        }
+}
+
