@@ -1126,6 +1126,7 @@ button {
 
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
+    margin-left: 26px;
 }
 
 .jYaNXo .brand {
