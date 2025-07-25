@@ -2709,7 +2709,7 @@ input[type="radio"]:checked + label.radio-option::before {
 	height: 16px;
 }
 
-/* Center the button vertically within its parent container */
+
 .sc-iRFsWr.bUSPeg {
 	display: flex;
 	align-items: center; 
