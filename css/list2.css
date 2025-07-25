@@ -2647,9 +2647,9 @@ input[type="radio"]:checked + label.radio-option::before {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1000; /* Đảm bảo navbar nằm trên các phần tử khác */
-	background-color: white; /* Giữ màu nền trắng */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tùy chọn: thêm bóng để nổi bật */
+	z-index: 1000; 
+	background-color: white;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Thêm padding-top cho phần nội dung chính để tránh bị che bởi navbar cố định */
