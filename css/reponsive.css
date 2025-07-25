@@ -1156,3 +1156,94 @@ body {
         margin-right: 5px;
     }
 }
+
+/* Responsive custom for homepage */
+@media (max-width: 1024px) {
+  .branch-list-container, .sc-cvlWTT.cbAeBN.container.my-5 {
+    max-width: 98vw;
+    padding: 20px 8px;
+  }
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .sc-cvlWTT.cbAeBN.container.my-5 {
+    padding: 20px 8px;
+  }
+  .sc-cvlWTT.cbAeBN.container.my-5 .large-image,
+  .sc-cvlWTT.cbAeBN.container.my-5 .small-image {
+    max-width: 100%;
+    max-height: 260px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .sc-cvlWTT.cbAeBN.container.my-5 .image-container {
+    gap: 16px;
+  }
+  .sc-cvlWTT.cbAeBN.container.my-5 .living-story-header {
+    font-size: 1.3rem;
+  }
+  .branch-list-container, .sc-cvlWTT.cbAeBN.container.my-5 {
+    margin: 16px 0;
+    padding: 12px 4px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .container, .row {
+    padding-left: 4px;
+    padding-right: 4px;
+    flex-direction: column !important;
+  }
+  .card-container, .building-card {
+    width: 100% !important;
+    margin-bottom: 16px;
+    min-width: unset;
+  }
+  .footer-content-container {
+    position: static;
+    transform: none;
+    padding: 12px 4px;
+    border-radius: 8px;
+  }
+  .main-header-nav {
+    height: auto;
+    flex-direction: column;
+    padding: 8px 0;
+  }
+  .banner-image {
+    height: 180px !important;
+  }
+  .nso-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+  .image-container {
+    flex-direction: column !important;
+    gap: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .sc-cvlWTT.cbAeBN.container.my-5 {
+    padding: 12px 2px;
+  }
+  .sc-cvlWTT.cbAeBN.container.my-5 .large-image,
+  .sc-cvlWTT.cbAeBN.container.my-5 .small-image {
+    max-height: 200px;
+  }
+  .branch-list-container, .sc-cvlWTT.cbAeBN.container.my-5 {
+    padding: 6px 2px;
+    margin: 8px 0;
+    font-size: 15px;
+  }
+  .footer-content-container {
+    padding: 8px 2px;
+    font-size: 14px;
+  }
+  .nso-title {
+    font-size: 1.1rem;
+  }
+}
+

@@ -15,3 +15,27 @@
 .swiper-fade .swiper-slide-active .swiper-slide-active {
     pointer-events: auto
 }
+
+@-webkit-keyframes mui-auto-fill {
+    from {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill {
+    from {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    from {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    from {
+        display: block;
+    }
+}

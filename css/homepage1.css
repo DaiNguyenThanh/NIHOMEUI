@@ -1526,7 +1526,7 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     overflow: auto;
-    -ms-overflow-style: scrollbar
+    -ms-overflow-style: auto
 }
 
 figure {
@@ -1602,7 +1602,9 @@ select {
 }
 
 select {
-    word-wrap: normal
+    word-wrap: normal;
+    border: none;
+    
 }
 
 [type=button],
@@ -7564,7 +7566,7 @@ a.close.disabled {
 
 .modal-header {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     justify-content: space-between;
     padding: 1rem;
     border-bottom: 1px solid #dee2e6;
@@ -12527,13 +12529,13 @@ a.text-dark:hover {
 }
 
 .primary-btn {
-    background-color: var(--primary-orange) !important;
+    background-color: #ed1c24c7!important;
     color: #fff !important
 }
 
 .primary-btn:hover {
     color: #fff;
-    box-shadow: 4px 8px 24px 0 var(--primary-orange-hover)
+    box-shadow: 4px 8px 24px 0 #c32a20
 }
 
 .primary-btn:focus {
@@ -16769,7 +16771,7 @@ button.swiper-pagination-bullet {
 }
 
 .body-1-semi-bold-f16a24 {
-    color: #f16a24
+    color: #ff3023
 }
 
 .body-1-semi-bold-f16a24,
@@ -17891,7 +17893,7 @@ button.swiper-pagination-bullet {
 .body-2-medium,
 .body-2-medium-black {
     font-family: Be Vietnam Pro;
-    font-size: 14px;
+    font-size: 11.5px;
     font-weight: 500;
     line-height: 18px
 }
@@ -22075,12 +22077,11 @@ a:hover {
     color: black;
 }
 
-.header-logo img {
+/* .header-logo img {
     max-width: 120px;
-    /* Adjust logo size to fit smaller header */
     height: auto;
-    /* Maintain aspect ratio */
-}
+
+} */
 
 .header-menu {
     display: flex;
@@ -22128,7 +22129,7 @@ a:hover {
     /* Adjust font size for dropdown */
 }
 
-/* Menu styles */
+
 .main-menu {
     display: none;
     position: absolute;
@@ -22138,19 +22139,16 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 220px;
-    /* Adjust width for smaller header */
     z-index: 1000;
 }
 
 .main-menu__header {
     padding: 5px;
-    /* Adjust padding for a smaller menu header */
     text-align: right;
 }
 
 .main-menu__body {
     padding: 5px;
-    /* Adjust padding for a smaller menu body */
 }
 
 .menu-list {
@@ -22170,17 +22168,14 @@ a:hover {
     background-color: #f8f9fa;
 }
 
-/* Footer styles */
 .main-menu__footer {
     padding: 5px;
-    /* Adjust padding for a smaller footer */
     border-top: 1px solid #ddd;
 }
 
 .footer-menu__item {
     display: block;
     padding: 6px 0;
-    /* Adjust padding for footer items */
     color: #333;
     text-decoration: none;
 }
@@ -22189,11 +22184,9 @@ a:hover {
     color: #007bff;
 }
 
-/* Social media icons */
 .social-menu {
     display: flex;
     gap: 8px;
-    /* Adjust gap between social icons */
 }
 
 .social-menu a {
@@ -22204,22 +22197,18 @@ a:hover {
 .social-menu svg {
     fill: #333;
     width: 20px;
-    /* Adjust icon size */
     height: auto;
-    /* Maintain aspect ratio */
 }
 
 .social-menu a:hover svg {
     fill: #007bff;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
 
 
     .header-menu__item {
         margin: 5px 0;
-        /* Adjust margin for mobile view */
     }
 
     .main-menu {
